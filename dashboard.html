@@ -196,6 +196,124 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-07-07', label:'7월 7일', day:'화', hot:true, tags:'JKLAB급등47달러 · 중국공급철회 · CBAM비료조항부결',
+    ocrUrl:'https://drive.google.com/file/d/10xaYv_73D4TVLWfeDWH5DxldfuZUg1-fk5NUlHTzFHA/edit?usp=drivesdk',
+    prices:{me:680, ea:740, nwe:725, usg:710, jklab:873.53}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'JKLAB 저탄소 벤치마크 급등 — $873.53/t(+47.48), 스팟가 보합 속 저탄소 프리미엄 확대'},
+      {type:'hot', text:'중국, 수요 부진으로 공급 철회 — 중동 수출 부재로 수주내 현물수요 복귀 전망'},
+      {type:'pol', text:'EU 의회, CBAM 비료 사용중단 조항(27a) 부결 — 농민단체 반발, 9월 본회의서 최종확정'},
+      {type:'',    text:'그린수소 하류부문 — 플러그파워 호주 전해조 공급 / 아크와파워 사우디 수출독점권 확보'},
+    ], monitor:'JKLAB 저탄소 프리미엄 확대 지속 여부 · 7월 탬파 결산가 발표 시점 · CBAM 9월 EU 본회의 결과 · 중동 수출설비 재가동 시점' },
+  { date:'2026-07-06', label:'7월 6일', day:'월', hot:true, tags:'중동수출60일안전기준 · 나프토가즈가스시설공격 · 인도가스비상해제',
+    ocrUrl:'https://drive.google.com/file/d/157AI86THy3qF3Dtm8b44CVctUNmt1duyHYpdC_rdhM4/edit?usp=drivesdk',
+    prices:{me:680, ea:740, nwe:725, usg:710, jklab:826.05}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'중동 수출 재개 근시일 내 어려움 — 호르무즈 60일 안전 입증 전까지 선적 보류(3분기말 목표)'},
+      {type:'hot', text:'러시아, 우크라이나 나프토가즈 가스시설 대규모 공격 / 우크라이나도 러 야로슬라블 정유소 드론 공격'},
+      {type:'pol', text:'인도, 천연가스 공급 비상제한 조치 철회 — 호르무즈발 LNG 선적 재개 확인 후'},
+      {type:'',    text:'인도 Fact 입찰 마감 임박(7/9) — 9.35만톤 코친항 연간계약'},
+    ], monitor:'7월 탬파 결산가 발표 시점 · 중동 수출설비 재가동 "60일 안전" 기준 충족 시점 · 러-우크 에너지시설 공방 영향 · 7/9 Fact 입찰 결과' },
+  { date:'2026-07-03', label:'7월 3일', day:'금', hot:true, tags:'Searambler호탈출완료 · 7월탬파대기가격안정 · 인도인산가340달러급등',
+    ocrUrl:'https://drive.google.com/file/d/1JSIVDKYByfrKkKJbDJyHFq0NDzy8XSHp/view?usp=drivesdk',
+    prices:{me:680, ea:740, nwe:725, usg:710, jklab:826.05}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'마지막 잔류 암모니아선(Searambler) 호르무즈 탈출 — 갇힌 선박 3척 전원 탈출 완료'},
+      {type:'hot', text:'가격 안정화 — 7월 탬파 결산 대기 지속, OCP만 100% 가동 확보'},
+      {type:'',    text:'인도 3분기 인산가 $340/t 급등 — DAP 수입경쟁력 제고, 인산비료 화물 호르무즈 잔류 소진'},
+      {type:'pol', text:'美, 모로코 인산비료 상계관세 8개월 유예 — OCP 美시장 복귀 기회'},
+      {type:'pol', text:'인도-일본, 에너지 회복력 협력 강화 합의(석유가스안보·해상운송·청정에너지)'},
+    ], monitor:'7월 탬파 결산가 발표 시점 · 비이란 수출설비 재가동 여부 · 인도 DAP 수입 확대 · OCP 美시장 복귀 물량' },
+  { date:'2026-07-02', label:'7월 2일', day:'목', hot:true, tags:'모로코OCP122달러급락 · 야라GCA인수13억달러 · 헹감호르무즈재진입',
+    ocrUrl:'https://drive.google.com/file/d/1Efq5G59jnIXzIlnX6SmWE7cfPExPnDyD/view?usp=drivesdk',
+    prices:{me:680, ea:740, nwe:725, usg:710, jklab:826.05}, chg:{me:'nc', ea:'-15', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'가격 하락 지속 — 모나코 IFA 황공급난 논의, OCP $650 여파로 모로코 -$122.5'},
+      {type:'hot', text:'야라, GCA 텍사스시티 130만톤 설비 인수($13억) — OCP 공급계약 무산'},
+      {type:'',    text:'호르무즈 이란선박 헹감 선적 위해 재진입(MOU후 최초), Searambler는 잔류'},
+      {type:'',    text:'인도 Fact 입찰(9.35만톤)·관세유예 7/15 연장, 방글라데시 저가거래'},
+      {type:'pol', text:'美 공화당 존스법 유예연장 반대 촉구, USDA $5억 비료생산 지원 출범'},
+    ], monitor:'7월 탬파 결산가 발표 지연 · 7/9 Fact 입찰·7/15 관세유예 재연장 · 헹감 외 이란 수출설비 가동 · 존스법 유예 연장 여부' },
+  { date:'2026-07-01', label:'7월 1일', day:'수', hot:true, tags:'수에즈서쪽시장급락 · 7월탬파100달러하락예상 · 이란원유수출정상화',
+    ocrUrl:'https://drive.google.com/file/d/15U4Idx2VASe4uBrEGreHjkx2WjEHZnQB/view?usp=drivesdk',
+    prices:{me:680, ea:755, nwe:725, usg:710, jklab:826.05}, chg:{me:'-10', ea:'-10', nwe:'-80', usg:'-40'},
+    issues:[
+      {type:'hot', text:'수에즈 서쪽 시장 대폭 재조정 — 유럽 -$80, 미국걸프 -$40, 동쪽도 각 -$10'},
+      {type:'hot', text:'전일 OCP $650 거래 반영 — 7월 탬파 결산 $100/t 이상 하락 예상 확산'},
+      {type:'',    text:'인도, 방글라데시 7000톤 화물 $650 이하 추정 매입'},
+      {type:'',    text:'이란, 美 봉쇄해제 후 원유수출 정상화 가속(4000만배럴+, 국제벤치마크가)'},
+      {type:'pol', text:'Acme, 일본 LTDA용 26만톤/년 재생암모니아 공급 계획 · 제라 싱가포르 신규 자회사 설립'},
+    ], monitor:'7월 탬파 결산가·하락폭($100/t+) · 저가거래 확산 여부 · 이란 암모니아 부문 정상화 속도 · 일본 재생암모니아 조달 확대' },
+  { date:'2026-06-30', label:'6월 30일', day:'화', hot:true, tags:'OCP650달러매입 · 인도관세유예연장 · 에어프로덕츠LCEC철회',
+    ocrUrl:'https://drive.google.com/file/d/1OsZbuWCHybaMIl-BqH7h3RfegaeHyqF4/view?usp=drivesdk',
+    prices:{me:690, ea:765, nwe:805, usg:750, jklab:826.05}, chg:{me:'-10', ea:'-10', nwe:'-10', usg:'nc'},
+    issues:[
+      {type:'hot', text:'OCP, 7월 화물 $650/t cfr에 매입(아메리카산) — 저가거래 확산 신호'},
+      {type:'hot', text:'인도, 암모니아 수입관세 유예 7/15까지 연장'},
+      {type:'hot', text:'이란산 인도향 유입 지속 — 선박 1척 선적목적 호르무즈 재진입'},
+      {type:'pol', text:'[수소] 中 2030 재생수소 200만톤/년 목표 공식화 · 에어프로덕츠 루이지애나 CCS수소 전면철회($29억 손상)'},
+      {type:'pol', text:'[수소] BP 호주 그린수소 프로젝트 취소 · 일본 IHI 인도 재생암모니아 CfD 보조금 선정'},
+    ], monitor:'OCP $650대 거래 확산 여부 · 인도 관세유예 재연장 · 6/30 도하 미-이란 협상 · 美저탄소수소 프로젝트 추가철회' },
+  { date:'2026-06-29', label:'6월 29일', day:'월', hot:true, tags:'가격조정지속모나코컨퍼런스 · 이란美공격중단협상재개 · 카자흐황수출금지',
+    ocrUrl:'https://drive.google.com/file/d/1GbGv2fgHZ1QaWwl5pEVixapdhlLMSV_L/view?usp=drivesdk',
+    prices:{me:700, ea:775, nwe:815, usg:750, jklab:824.64}, chg:{me:'nc', ea:'-10', nwe:'-35', usg:'-25'},
+    issues:[
+      {type:'hot', text:'가격 조정 지속 — 모나코 컨퍼런스 중, 7월 탬파 결산 최소 $50/t 하락 전망'},
+      {type:'hot', text:'이란-美, 공격 중단 및 협상 재개 합의 — 6/30 카타르서 재개'},
+      {type:'hot', text:'카자흐스탄, 황 수출 전면 금지(6/27부터, 러시아 제외) — 인산비료 생산 차질 우려'},
+      {type:'',    text:'Searambler호, 호르무즈 마지막 잔류 암모니아선으로 남음'},
+      {type:'',    text:'오만, 통행료 반대·자발적 서비스 모델 지지로 절충안 제시'},
+    ], monitor:'6/30 카타르 이란-美 협상 결과 · 7월 탬파 결산가·하락폭 · Searambler호 이동 여부 · 카자흐 황수출금지 영향' },
+  { date:'2026-06-26', label:'6월 26일', day:'금', hot:true, tags:'Fact인도연간입찰 · 호르무즈2번째탈출EcoOracle · 오만GCC美공동선언',
+    ocrUrl:'https://drive.google.com/file/d/1Piso9Hi3Pv-iXTuV39cZE3sJnHOJvz7n/view?usp=drivesdk',
+    prices:{me:700, ea:785, nwe:850, usg:775, jklab:824.64}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'Fact, 인도 연간 구매 입찰 발행 — 9.35만톤 코친항, 7/9 마감(이전 3회 유찰)'},
+      {type:'hot', text:'호르무즈 탈출 2번째 선박(Eco Oracle), Green One도 탈출 — Searambler만 잔류'},
+      {type:'hot', text:'오만, GCC·美와 호르무즈 통행료 반대 선언 동참 — 대이란 협의 입장 선회'},
+      {type:'hot', text:'IMO, 오만 인근 공격 발생 후 대피작전 일시 중단 — 최근 사흘간 50척 이상 우회통과'},
+      {type:'',    text:'인도 NFL DAP 입찰 취소 등 인산염·요소 시장도 약세, 전 지역 가격 보합'},
+    ], monitor:'Fact 입찰(7/9) 결과 · Searambler호 탈출 여부 · 오만 우회항로 지속 및 IMO 대피작전 재개 · 7월 탬파 결산' },
+  { date:'2026-06-25', label:'6월 25일', day:'목', hot:true, tags:'평화협정1주일급락 · GreenOne호르무즈탈출 · IRGC항로경고',
+    ocrUrl:'https://drive.google.com/file/d/1XSWjr71M1skqYLnzbw-poD19Coua8hJM/view?usp=drivesdk',
+    prices:{me:700, ea:785, nwe:850, usg:775, jklab:824.64}, chg:{me:'-60', ea:'-30', nwe:'-15', usg:'nc'},
+    issues:[
+      {type:'hot', text:'미-이란 평화협정 1주일 — 정서 변화로 전 지역 급락(중동-60·동아시아-30·NWE-15), 공급은 미변동'},
+      {type:'hot', text:'트라모 Green One호, 전쟁후 최초 호르무즈 탈출 비이란 암모니아선 — 2척은 여전히 대기'},
+      {type:'hot', text:'이란 IRGC 미지정항로 경고 vs 美 "호르무즈 원유흐름 전쟁이전 회복" 공식화'},
+      {type:'',    text:'인도 cfr $730-790(-45) 급락 — 헹감 제재해제시 수입 대폭 확대 기대'},
+      {type:'',    text:'미국 3분기 오퍼 인상(+$50/st), 7월 탬파 결산 $50~100/t 추가하락 전망 확산'},
+    ], monitor:'갇힌 선박 2척 탈출·신규진입 여부 · IRGC 항로통제 영향 · 인도 $700 이하 진입여부 · 7월 탬파 결산가' },
+  { date:'2026-06-24', label:'6월 24일', day:'수', hot:true, tags:'전지역가격하락 · IMO호르무즈철수계획 · 인도수요위축',
+    ocrUrl:'https://drive.google.com/file/d/1od-1d9zwPUHx2hNCm15jCQyLf_2doajO/view?usp=drivesdk',
+    prices:{me:760, ea:815, nwe:865, usg:775, jklab:824.64}, chg:{me:'-10', ea:'-10', nwe:'-15', usg:'nc'},
+    issues:[
+      {type:'hot', text:'유럽·중동·동아시아 전반 가격 하락 — 브렌트유 전쟁 이전 수준, TTF 4월20일 이후 최저'},
+      {type:'hot', text:'IMO, 호르무즈 갇힌 선박 대규모 철수 계획 조율 — 통항량은 협정 이후 최고치'},
+      {type:'',    text:'인도 수요 극도 위축 — 황 부족으로 매수자 오퍼 전면 거부, $700 이하 전망도'},
+      {type:'pol', text:'야라, 네덜란드 그린수소 쿼터 반발 — 재생암모니아 수입 검토'},
+      {type:'',    text:'미국 보합 지속 — 7월 탬파 결산 임박, 추가 큰 폭 하락 예상'},
+    ], monitor:'IMO 철수작전 이행 및 갇힌 선박 3척 이동 · 7월 탬파 결산가·하락폭 · 인도 황공급 회복 · 야라-네덜란드 쿼터 협상' },
+  { date:'2026-06-23', label:'6월 23일', day:'화', hot:true, tags:'이란제재면제반응엇갈림 · 호르무즈영구변화 · IEA2030전망하향',
+    ocrUrl:'https://drive.google.com/file/d/1uICQ5w6hwAlFMC1QHdGCWZ8lOeSd_yjP/view?usp=drivesdk',
+    prices:{me:770, ea:825, nwe:880, usg:775, jklab:824.64}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'이란 제재 면제에 엇갈린 반응 — 결제망·통항 재개 우려로 실거래 아직 제한적'},
+      {type:'hot', text:'"호르무즈 통항 전쟁 이전으로 안 돌아가" — 이란 의회, 테헤란 직접관리 시사'},
+      {type:'',    text:'이란 수출업체 가동률 약 80%, 필바라 재가동 확인(야라 2.35만톤 선적)'},
+      {type:'pol', text:'[수소] IEA, 2030년 저탄소 수소 생산능력 전망 2700만톤/년으로 하향(-1000만톤)'},
+      {type:'pol', text:'[수소] EU 3차 수소은행 경매 4개 프로젝트 추가 선정(€148mn) · 중국 그린수소 재생에너지정책 편입(8/1)'},
+    ], monitor:'이란 결제망·통항 정상화 진전 여부 · 필바라 재가동 지속성 · 7월 탬파 결산 · IEA 전망 하향의 FID 영향' },
+  { date:'2026-06-22', label:'6월 22일', day:'월', hot:true, tags:'이란제재면제 · 카타르바르잔폭발 · 호르무즈통항조짐',
+    ocrUrl:'https://drive.google.com/file/d/1bP8Lr9tyeYY7_aU85CjPJcHqIKoBS8xO/view?usp=drivesdk',
+    prices:{me:770, ea:825, nwe:880, usg:775, jklab:828.99}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'미국, 대이란 제재 면제 발표 — 원유·석유화학 무제한 판매 8월21일까지 허용(6/18 협정 이행)'},
+      {type:'hot', text:'카타르 바르잔 가스시설 폭발 — 라스라판 재가동 중 화재, LNG 공급 우려'},
+      {type:'',    text:'호르무즈 통항 재개 조짐 — 황 운반선 3개월만에 통과, 사우디 DAP 화물도 통과'},
+      {type:'',    text:'미국 6월 수출 19.3만톤 육박(전년比+69%), 중국 6월 수출 10만톤 초과 3개월 연속'},
+      {type:'',    text:'전 지역 가격 보합 — 중동$770·동아시아$825·NWE$880·미국걸프$775'},
+    ], monitor:'미-이란 60일 협상 기한 내 타결 여부 · 카타르 바르잔 시설 복구 일정 · 호르무즈 선박 통항 확대 지속 여부 · 7월 탬파 결산가' },
   { date:'2026-06-19', label:'6월 19일', day:'금', hot:true, tags:'PGSA통항통제지속 · 이스라엘헤즈볼라휴전 · CBAM중단가능성낮음',
     ocrUrl:'https://docs.google.com/document/d/1HUnyqfUb5uikFTZHrGyAJ2M3qUgvg1-Fpdddy4F0TP8/edit?usp=drivesdk&ouid=112171435946091511989',
     prices:{me:770, ea:825, nwe:880, usg:775, jklab:828.99}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
@@ -625,247 +743,4 @@ const briefs = [
       {type:'hot', text:'이란, 봉쇄를 해적 행위로 규정 — 걸프 항구 보복 타격 경고'},
       {type:'',    text:'전 지역 가격 보합 — 신규 거래 부재, 그러나 봉쇄 시행 시 즉각 인상 전망'},
       {type:'pol', text:'EU CBAM 1분기 실적 — 비료·철강 간 비용 흡수 능력 격차 뚜렷'},
-      {type:'pol', text:'인도 그린 암모니아 입찰 2개 구매자 철회 — 물량 재배분 가능성'}
-    ], monitor:'미국 해상 봉쇄 시행 범위 · 이란 보복 타격 실행 여부 · 인도 IPL 입찰(4/15) · CBAM 무역 흐름 변화' },
-  { date:'2026-04-10', label:'4월 10일', day:'금', hot:true, tags:'휴전 불안 · 호르무즈 정체 · 보합',
-    ocrUrl:'https://docs.google.com/document/d/17PI2KQPORxw05rcfVuIWfPvYOsO4lCA1lyUNKELlXzo/edit',
-    prices:{me:700,ea:725,nwe:830,usg:775,jklab:686.74}, chg:{me:'nc',ea:'nc',nwe:'nc',usg:'nc'},
-    issues:[
-      {type:'hot', text:'휴전 3일째 호르무즈 통행 오히려 감소 — 하루 8척 미만, 트럼프 불만 표시'},
-      {type:'hot', text:'전쟁 위험 보험료 소폭 하락 시작 — 실질 통항 재개 조건 아직 미충족'},
-      {type:'',    text:'파나마 운하 경매가 Argus 사상 최고치 — 호르무즈 차단 여파로 태평양 수요 급증'},
-      {type:'',    text:'IHI·Gentari·Petronas Chemicals, 말레이시아 2MW 암모니아 전소 가스터빈 추진'},
-      {type:'pol', text:'Argus 암모니아 생산비용 산식 변경 예고 (4월 16일~, CO2 포함 신규 산식)'}
-    ], monitor:'호르무즈 실질 통행 재개 조건 충족 여부 · 인도 IPL 입찰 결과(4/15) · 전쟁위험 보험료 완화 속도' },
-  { date:'2026-04-09', label:'4월 9일', day:'목', hot:true, tags:'공급위기 · 드론공격 · 가격급등',
-    ocrUrl:'https://docs.google.com/document/d/1nndoKFvC75xqav2Bb9ePeUFKvHzMDI-OXmZrB1D516s/edit',
-    prices:{me:700,ea:725,nwe:830,usg:775,jklab:686.74}, chg:{me:'+10',ea:'+25',nwe:'+20',usg:'nc'},
-    issues:[
-      {type:'hot', text:'공급 위기 출구 없음 — 인도 +$50, 동아시아 +$25, NW유럽 +$20 일제 상승'},
-      {type:'hot', text:'이란산 암모니아 화물 호르무즈 해협 통과 — 전쟁 발발 이후 최초 (제재 선박 이용)'},
-      {type:'hot', text:'사우디 주바일 드론 공격 재확인 — Sabic 암모니아 3플랜트(230만 t) 피해 미확인'},
-      {type:'',    text:'미국 GCA·Woodside 수출 재개 — 글로벌 부족 완충 효과 제한적'},
-      {type:'pol', text:'인도네시아 Luwuk 5월 1개월 정기보수 — 동아시아 추가 공급 감소 예정'}
-    ], monitor:'호르무즈 선주보험 기준 합의 / Sabic 피해 공식 확인 / 한국 5-6월 spot 조달 긴박화' },
-  { date:'2026-04-08', label:'4월 8일', day:'수', hot:true, tags:'휴전 · 한국H2전략 · 암모니아혼소',
-    ocrUrl:'https://docs.google.com/document/d/10hIy1Ag8zjuIJ_hPXMiNsS2o9FDZMrjQ1usyrp9Tz18/edit',
-    prices:{me:690,ea:700,nwe:810,usg:775,jklab:686.74}, chg:{me:'nc',ea:'nc',nwe:'nc',usg:'nc'},
-    issues:[
-      {type:'hot', text:'미국-이란 2주 휴전 발표에도 호르무즈 통항 재개 없어 — MGC 3척 5주째 봉쇄'},
-      {type:'hot', text:'FACT 인도 입찰 취소 — 오퍼 ~$1,000/t cfr, 수요 파괴 신호'},
-      {type:'pol', text:'[수소] 한국 청정수소 전략 전환 — 암모니아 혼소 장기 계획 사실상 소멸'},
-      {type:'pol', text:'[수소] Samsung C&T, 인도 Reliance 재생암모니아 $3bn 공급 계약 체결'},
-      {type:'',    text:'[수소] 그리스, 2030년 도로 운송 RFNBO 1% 의무화 입법 추진'}
-    ], monitor:'한국 청정수소발전 2차 입찰 재개 방향 / Reliance 재생암모니아 공급 현실성 / 인도 수요 동향' },
-  { date:'2026-04-07', label:'4월 7일', day:'화', hot:true, tags:'주바일공격 · FACT입찰 · 공급봉쇄',
-    ocrUrl:'https://docs.google.com/document/d/1pT52oz494yM-CgbsLFNq-O9L0_TMcGCazWHbVIp4DhU/edit',
-    prices:{me:690,ea:700,nwe:810,usg:775,jklab:686.74}, chg:{me:'+40',ea:'+50',nwe:'+45',usg:'+90'},
-    issues:[
-      {type:'hot', text:'사우디 주바일 산업단지 공격 — Sabic 암모니아 2.3mn t/yr 위협'},
-      {type:'hot', text:'호르무즈 해협 통항 여전히 봉쇄 — 중동 암모니아 사실상 시장 차단'},
-      {type:'hot', text:'FACT 인도 입찰 취소 — 오퍼 가격 ~$1,000/t cfr 수준 도달'},
-      {type:'',    text:'미국 걸프 암모니아 수출 재개 — GCA·Woodside 출하 시작'},
-      {type:'pol', text:'동아시아 바이어들 5-6월 물량 확보 움직임 — 한국 포함'}
-    ], monitor:'Sabic 피해 규모 확인 / 호르무즈 보험 기준 / 인도 DAP 보조금 / Luwuk 보수 일정' },
-];
-
-function chgClass(v){ return v.startsWith('+') ? 'up' : v==='nc' ? 'nc' : 'dn'; }
-function chgLabel(v){ return v==='nc' ? '→ 보합' : v.startsWith('+') ? '▲ '+v : '▼ '+v; }
-const clrMap = {up:'#D85A30', nc:'#639922', dn:'#185FA5'};
-
-let activeFilter = 'all';
-
-function getFilteredBriefs(){
-  const q = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
-  return briefs.filter(b => {
-    if(activeFilter==='hot' && !b.hot) return false;
-    if(activeFilter==='pol' && !b.issues.some(i=>i.type==='pol')) return false;
-    if(activeFilter==='h2'){
-      const allText = [b.tags,...b.issues.map(i=>i.text),b.monitor||''].join(' ');
-      if(!/수소|H2|hydrogen|그린|RFNBO|전해|암모니아.*수소|수소.*암모니아/i.test(allText)) return false;
-    }
-    if(q){
-      const hay = [b.tags,b.label,b.monitor||'',...b.issues.map(i=>i.text)].join(' ').toLowerCase();
-      return q.split(/\s+/).every(w=>hay.includes(w));
-    }
-    return true;
-  });
-}
-
-const MONTH_KO = {'04':'4월','05':'5월','06':'6월','07':'7월','08':'8월','09':'9월','10':'10월','11':'11월','12':'12월','01':'1월','02':'2월','03':'3월'};
-
-function renderDates(){
-  const list = document.getElementById('dateList');
-  const filtered = getFilteredBriefs();
-  list.innerHTML = '';
-
-  const rc = document.getElementById('resultCount');
-  if(rc) rc.textContent = filtered.length === briefs.length
-    ? `전체 ${briefs.length}건`
-    : `${filtered.length}건 / 전체 ${briefs.length}건`;
-
-  if(filtered.length === 0){
-    list.innerHTML = '<div style="padding:24px 8px;text-align:center;color:#bbb;font-size:13px">검색 결과 없음</div>';
-    document.getElementById('previewCol').innerHTML = '<div class="empty-msg">검색 결과가 없습니다</div>';
-    return;
-  }
-
-  // 월별 그룹핑
-  const groups = {};
-  filtered.forEach(b=>{
-    const ym = b.date.slice(0,7);
-    if(!groups[ym]) groups[ym]=[];
-    groups[ym].push(b);
-  });
-
-  let firstItem = null, firstBrief = null;
-  Object.keys(groups).sort().reverse().forEach(ym=>{
-    const [y,m] = ym.split('-');
-    const section = document.createElement('div');
-    section.className = 'month-group';
-    const hdr = document.createElement('div');
-    hdr.className = 'month-header';
-    hdr.innerHTML = `${y}년 ${MONTH_KO[m]}<span class="month-count">${groups[ym].length}건</span>`;
-    section.appendChild(hdr);
-
-    groups[ym].forEach(b=>{
-      const isLatest = b===briefs[0];
-      const el = document.createElement('div');
-      el.className = 'date-item';
-      el.dataset.date = b.date;
-      el.innerHTML = `<div class="d-date">${b.label} (${b.day})${isLatest?'<span class="d-latest">최신</span>':''}</div>${b.hot?'<div class="d-badge">긴급이슈</div>':''}`;
-      el.onclick = ()=>{
-        document.querySelectorAll('.date-item').forEach(x=>x.classList.remove('selected'));
-        el.classList.add('selected');
-        renderPreview(b);
-      };
-      section.appendChild(el);
-      if(!firstItem){ firstItem=el; firstBrief=b; }
-    });
-    list.appendChild(section);
-  });
-
-  // 자동 선택
-  if(firstItem){ firstItem.classList.add('selected'); renderPreview(firstBrief); }
-}
-
-function onSearch(){ renderDates(); }
-
-function setFilter(f, btn){
-  activeFilter = f;
-  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
-  btn.classList.add('active');
-  renderDates();
-}
-
-function renderPreview(b){
-  const col = document.getElementById('previewCol');
-  const issueHtml = b.issues.map(iss=>`<div class="issue-mini-item${iss.type==='hot'?' hot':iss.type==='pol'?' pol':''}">${iss.text}</div>`).join('');
-  col.innerHTML = `
-    <div class="preview-card">
-      <div class="preview-header">
-        <div class="preview-header-title">번역 정리 — ${b.label} (${b.day})</div>
-        <div class="preview-header-meta">Argus Media &nbsp;·&nbsp; ${b.tags}</div>
-      </div>
-      <div class="preview-body">
-        <div class="price-sec-label">암모니아 현물가 ($/t)</div>
-        <table class="price-table">
-          <tr><td class="region">중동 fob</td><td class="num">${b.prices.me}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.me)]}">${chgLabel(b.chg.me)}</td></tr>
-          <tr><td class="region">동아시아 cfr</td><td class="num">${b.prices.ea}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.ea)]}">${chgLabel(b.chg.ea)}</td></tr>
-          <tr><td class="region">NW유럽 cfr</td><td class="num">${b.prices.nwe}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.nwe)]}">${chgLabel(b.chg.nwe)}</td></tr>
-          <tr><td class="region">미국걸프 cfr</td><td class="num">${b.prices.usg}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.usg)]}">${chgLabel(b.chg.usg)}</td></tr>
-        </table>
-        <div class="issue-sec-label">핵심 이슈 (5)</div>
-        ${issueHtml}
-        <div class="monitor-mini"><strong>★ 모니터링 포인트</strong>${b.monitor}</div>
-      </div>
-      <div class="preview-footer">
-        <div style="display:flex;gap:8px">
-          <a href="https://drive.google.com/drive/folders/1JOUk34BldofDOoZJMqAO4pXajJ7EO5IM" target="_blank" class="btn-src-sm">📄 원문 PDF</a>
-          <a href="${b.ocrUrl||'#'}" target="_blank" class="btn-src-sm">📝 번역본</a>
-        </div>
-        <a href="briefs/${b.date.replace(/-/g,'')}.html" class="btn-view">전체 정리본 →</a>
-      </div>
-    </div>`;
-}
-
-function renderCharts(){
-  const sorted = briefs.slice().reverse();
-  // 암모니아 가격이 있는 항목만 가격 차트에 사용 (수소 전용 브리핑 제외 → 선 끊김 방지)
-  const ammOnly  = sorted.filter(b => b.prices.me !== null);
-  const jklabOnly = sorted.filter(b => b.prices.jklab !== null);
-  const opts = {
-    responsive:true, maintainAspectRatio:false,
-    interaction:{mode:'index',intersect:false},
-    plugins:{legend:{display:false},tooltip:{backgroundColor:'#fff',borderColor:'#d8dde8',borderWidth:1,titleColor:'#0C447C',bodyColor:'#444',padding:10,callbacks:{label:c=>` ${c.dataset.label}: $${c.parsed.y}`}}},
-    scales:{x:{grid:{color:'#f0f0f0'},ticks:{color:'#888',font:{size:11}}},y:{grid:{color:'#f0f0f0'},ticks:{color:'#888',font:{size:11},callback:v=>'$'+v}}}
-  };
-  new Chart(document.getElementById('priceChart'),{type:'line',data:{labels:ammOnly.map(b=>b.label),datasets:[
-    {label:'중동 fob',      data:ammOnly.map(b=>b.prices.me),  borderColor:'#D85A30',borderWidth:2,pointRadius:4,tension:.3,fill:false},
-    {label:'동아시아 cfr',  data:ammOnly.map(b=>b.prices.ea),  borderColor:'#185FA5',borderWidth:2,pointRadius:4,tension:.3,fill:false},
-    {label:'NW유럽 cfr',    data:ammOnly.map(b=>b.prices.nwe), borderColor:'#639922',borderWidth:2,pointRadius:4,tension:.3,fill:false},
-    {label:'미국걸프 cfr',  data:ammOnly.map(b=>b.prices.usg), borderColor:'#8B5CF6',borderWidth:2,pointRadius:4,tension:.3,fill:false,borderDash:[4,3]}
-  ]},options:opts});
-  new Chart(document.getElementById('jklabChart'),{type:'line',data:{labels:jklabOnly.map(b=>b.label),datasets:[
-    {label:'JKLAB cfr 울산', data:jklabOnly.map(b=>b.prices.jklab), borderColor:'#0C447C',backgroundColor:'rgba(12,68,124,.1)',borderWidth:2.5,pointRadius:5,tension:.3,fill:true},
-    {label:'중동 fob (참조)', data:jklabOnly.map(b=>b.prices.me),   borderColor:'#FAC775',borderWidth:2,pointRadius:4,tension:.3,fill:false,borderDash:[5,4]}
-  ]},options:opts});
-}
-
-// 키보드 네비게이션 (↑↓로 날짜 이동)
-document.addEventListener('keydown', e=>{
-  if(e.target.tagName==='INPUT') return;
-  const items = [...document.querySelectorAll('.date-item')];
-  if(!items.length) return;
-  const idx = items.findIndex(el=>el.classList.contains('selected'));
-  let next = -1;
-  if(e.key==='ArrowDown') next = Math.min(idx+1, items.length-1);
-  if(e.key==='ArrowUp')   next = Math.max(idx-1, 0);
-  if(next>=0 && next!==idx){
-    items[next].click();
-    items[next].scrollIntoView({block:'nearest'});
-    e.preventDefault();
-  }
-});
-
-function switchTab(tab,btn){
-  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
-  document.getElementById(tab).classList.add('active');
-  btn.classList.add('active');
-}
-
-function handleLogout(){
-  AUTH.logout();
-  window.location.replace('login.html');
-}
-
-function updateStatCards(){
-  // 최신 암모니아 가격이 있는 브리핑
-  const latestAmm = briefs.find(b=>b.prices.me!==null);
-  // 전체 중 중동 fob 최고치
-  const maxMe = briefs.filter(b=>b.prices.me).reduce((a,b)=>b.prices.me>a.val?{val:b.prices.me,label:b.label}:a,{val:0,label:''});
-  // 최신 JKLAB
-  const latestJk = briefs.find(b=>b.prices.jklab!==null);
-
-  if(latestAmm){
-    const me = document.getElementById('statMe');
-    if(me){ me.querySelector('.stat-val').textContent='$'+latestAmm.prices.me; me.querySelector('.stat-sub').textContent=latestAmm.label+' 기준'; }
-    const nwe = document.getElementById('statNwe');
-    if(nwe){ nwe.querySelector('.stat-val').textContent='$'+latestAmm.prices.nwe; nwe.querySelector('.stat-sub').textContent=latestAmm.label+' 기준'; }
-  }
-  if(latestJk){
-    const jk = document.getElementById('statJklab');
-    if(jk){ jk.querySelector('.stat-val').textContent='$'+latestJk.prices.jklab; jk.querySelector('.stat-sub').textContent='45Q 미포함 · '+latestJk.label; }
-  }
-}
-
-document.addEventListener('DOMContentLoaded',()=>{
-  document.getElementById('totalCount').textContent = briefs.length;
-  renderDates();
-  renderCharts();
-  updateStatCards();
-});
-</script>
-</body>
-</html>
+      {type:'pol', text:'인도 그린 암모니아 입찰 2개 구매자 철회 — 물

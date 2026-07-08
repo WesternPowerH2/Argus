@@ -15,6 +15,4 @@ hydrogen_archive_v2.html
 # Google Apps Script 소스 (선택적)
 apps_script_v2.js
 
-# OS 파일
-.DS_Store
-Thumbs.db
+# OS 
