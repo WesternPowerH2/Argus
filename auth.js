@@ -66,10 +66,11 @@ const AUTH = (() => {
 
   function requireAuth() {
     if (!isLoggedIn()) {
-      const path  = window.location.pathname;
-      const match = path.match(/^(\/[^/]+)/);
-      const root  = match ? match[1] : '';
-      window.location.replace(root + '/index.html');
+      // 상대경로로 이동 — file:// 로컬 실행과 GitHub Pages 배포 양쪽에서 모두 동작하도록
+      // (절대경로 파싱 방식은 로컬 file:///C:/... 접근 시 드라이브 문자를 경로 세그먼트로
+      //  오인해 존재하지 않는 C:/index.html 로 잘못 이동하는 문제가 있었음)
+      const inBriefs = /\/briefs\//.test(window.location.pathname);
+      window.location.replace((inBriefs ? '../' : '') + 'index.html');
     }
   }
 
