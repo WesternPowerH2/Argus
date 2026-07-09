@@ -196,6 +196,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-07-08', label:'7월 8일', day:'수', hot:true, tags:'탬파7월결산$665 · 이란재공습 · 이란제재재도입',
+    ocrUrl:'https://drive.google.com/file/d/1BjDmclYCPPi_puJ5BjdISX9rgjt04uAf0CXgq9KcnLs/edit?usp=drivesdk',
+    prices:{me:680, ea:740, nwe:725, usg:710, jklab:873.53}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'탬파 7월 결산가 $665/t 확정 — 전월 대비 $110 급락, 수요 파괴발 하락세 재확인'},
+      {type:'hot', text:'미국, 이란 재공습·트럼프 "휴전 종료" 발언 — 중동 수출 재개 전망 악화'},
+      {type:'pol', text:'이란산 암모니아 제재 재도입 — OFAC 7/7 라이선스, 6/22 해제 결정 번복'},
+      {type:'',    text:'이토추·페닌슐라, 암모니아 벙커링 합작사 출범 — 유럽·지중해 인프라 확대'},
+    ], monitor:'중동 정세·호르무즈 해협 선박운항 정상화 시점 · 8월 현물수요 향방·판매자 협상 재개 · 이란 제재 추가 번복 여부 · JKLAB 다음 주간 발표치' },
   { date:'2026-07-07', label:'7월 7일', day:'화', hot:true, tags:'JKLAB급등47달러 · 중국공급철회 · CBAM비료조항부결',
     ocrUrl:'https://drive.google.com/file/d/10xaYv_73D4TVLWfeDWH5DxldfuZUg1-fk5NUlHTzFHA/edit?usp=drivesdk',
     prices:{me:680, ea:740, nwe:725, usg:710, jklab:873.53}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
@@ -743,4 +752,248 @@ const briefs = [
       {type:'hot', text:'이란, 봉쇄를 해적 행위로 규정 — 걸프 항구 보복 타격 경고'},
       {type:'',    text:'전 지역 가격 보합 — 신규 거래 부재, 그러나 봉쇄 시행 시 즉각 인상 전망'},
       {type:'pol', text:'EU CBAM 1분기 실적 — 비료·철강 간 비용 흡수 능력 격차 뚜렷'},
-      {type:'pol', text:'인도 그린 암모니아 입찰 2개 구매자 철회 — 물
+      {type:'pol', text:'인도 그린 암모니아 입찰 2개 구매자 철회 — 물량 재배분 가능성'}
+    ], monitor:'미국 해상 봉쇄 시행 범위 · 이란 보복 타격 실행 여부 · 인도 IPL 입찰(4/15) · CBAM 무역 흐름 변화' },
+  { date:'2026-04-10', label:'4월 10일', day:'금', hot:true, tags:'휴전 불안 · 호르무즈 정체 · 보합',
+    ocrUrl:'https://docs.google.com/document/d/17PI2KQPORxw05rcfVuIWfPvYOsO4lCA1lyUNKELlXzo/edit',
+    prices:{me:700,ea:725,nwe:830,usg:775,jklab:686.74}, chg:{me:'nc',ea:'nc',nwe:'nc',usg:'nc'},
+    issues:[
+      {type:'hot', text:'휴전 3일째 호르무즈 통행 오히려 감소 — 하루 8척 미만, 트럼프 불만 표시'},
+      {type:'hot', text:'전쟁 위험 보험료 소폭 하락 시작 — 실질 통항 재개 조건 아직 미충족'},
+      {type:'',    text:'파나마 운하 경매가 Argus 사상 최고치 — 호르무즈 차단 여파로 태평양 수요 급증'},
+      {type:'',    text:'IHI·Gentari·Petronas Chemicals, 말레이시아 2MW 암모니아 전소 가스터빈 추진'},
+      {type:'pol', text:'Argus 암모니아 생산비용 산식 변경 예고 (4월 16일~, CO2 포함 신규 산식)'}
+    ], monitor:'호르무즈 실질 통행 재개 조건 충족 여부 · 인도 IPL 입찰 결과(4/15) · 전쟁위험 보험료 완화 속도' },
+  { date:'2026-04-09', label:'4월 9일', day:'목', hot:true, tags:'공급위기 · 드론공격 · 가격급등',
+    ocrUrl:'https://docs.google.com/document/d/1nndoKFvC75xqav2Bb9ePeUFKvHzMDI-OXmZrB1D516s/edit',
+    prices:{me:700,ea:725,nwe:830,usg:775,jklab:686.74}, chg:{me:'+10',ea:'+25',nwe:'+20',usg:'nc'},
+    issues:[
+      {type:'hot', text:'공급 위기 출구 없음 — 인도 +$50, 동아시아 +$25, NW유럽 +$20 일제 상승'},
+      {type:'hot', text:'이란산 암모니아 화물 호르무즈 해협 통과 — 전쟁 발발 이후 최초 (제재 선박 이용)'},
+      {type:'hot', text:'사우디 주바일 드론 공격 재확인 — Sabic 암모니아 3플랜트(230만 t) 피해 미확인'},
+      {type:'',    text:'미국 GCA·Woodside 수출 재개 — 글로벌 부족 완충 효과 제한적'},
+      {type:'pol', text:'인도네시아 Luwuk 5월 1개월 정기보수 — 동아시아 추가 공급 감소 예정'}
+    ], monitor:'호르무즈 선주보험 기준 합의 / Sabic 피해 공식 확인 / 한국 5-6월 spot 조달 긴박화' },
+  { date:'2026-04-08', label:'4월 8일', day:'수', hot:true, tags:'휴전 · 한국H2전략 · 암모니아혼소',
+    ocrUrl:'https://docs.google.com/document/d/10hIy1Ag8zjuIJ_hPXMiNsS2o9FDZMrjQ1usyrp9Tz18/edit',
+    prices:{me:690,ea:700,nwe:810,usg:775,jklab:686.74}, chg:{me:'nc',ea:'nc',nwe:'nc',usg:'nc'},
+    issues:[
+      {type:'hot', text:'미국-이란 2주 휴전 발표에도 호르무즈 통항 재개 없어 — MGC 3척 5주째 봉쇄'},
+      {type:'hot', text:'FACT 인도 입찰 취소 — 오퍼 ~$1,000/t cfr, 수요 파괴 신호'},
+      {type:'pol', text:'[수소] 한국 청정수소 전략 전환 — 암모니아 혼소 장기 계획 사실상 소멸'},
+      {type:'pol', text:'[수소] Samsung C&T, 인도 Reliance 재생암모니아 $3bn 공급 계약 체결'},
+      {type:'',    text:'[수소] 그리스, 2030년 도로 운송 RFNBO 1% 의무화 입법 추진'}
+    ], monitor:'한국 청정수소발전 2차 입찰 재개 방향 / Reliance 재생암모니아 공급 현실성 / 인도 수요 동향' },
+  { date:'2026-04-07', label:'4월 7일', day:'화', hot:true, tags:'주바일공격 · FACT입찰 · 공급봉쇄',
+    ocrUrl:'https://docs.google.com/document/d/1pT52oz494yM-CgbsLFNq-O9L0_TMcGCazWHbVIp4DhU/edit',
+    prices:{me:690,ea:700,nwe:810,usg:775,jklab:686.74}, chg:{me:'+40',ea:'+50',nwe:'+45',usg:'+90'},
+    issues:[
+      {type:'hot', text:'사우디 주바일 산업단지 공격 — Sabic 암모니아 2.3mn t/yr 위협'},
+      {type:'hot', text:'호르무즈 해협 통항 여전히 봉쇄 — 중동 암모니아 사실상 시장 차단'},
+      {type:'hot', text:'FACT 인도 입찰 취소 — 오퍼 가격 ~$1,000/t cfr 수준 도달'},
+      {type:'',    text:'미국 걸프 암모니아 수출 재개 — GCA·Woodside 출하 시작'},
+      {type:'pol', text:'동아시아 바이어들 5-6월 물량 확보 움직임 — 한국 포함'}
+    ], monitor:'Sabic 피해 규모 확인 / 호르무즈 보험 기준 / 인도 DAP 보조금 / Luwuk 보수 일정' },
+];
+
+function chgClass(v){ return v.startsWith('+') ? 'up' : v==='nc' ? 'nc' : 'dn'; }
+function chgLabel(v){ return v==='nc' ? '→ 보합' : v.startsWith('+') ? '▲ '+v : '▼ '+v; }
+const clrMap = {up:'#D85A30', nc:'#639922', dn:'#185FA5'};
+
+let activeFilter = 'all';
+
+function getFilteredBriefs(){
+  const q = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
+  return briefs.filter(b => {
+    if(activeFilter==='hot' && !b.hot) return false;
+    if(activeFilter==='pol' && !b.issues.some(i=>i.type==='pol')) return false;
+    if(activeFilter==='h2'){
+      const allText = [b.tags,...b.issues.map(i=>i.text),b.monitor||''].join(' ');
+      if(!/수소|H2|hydrogen|그린|RFNBO|전해|암모니아.*수소|수소.*암모니아/i.test(allText)) return false;
+    }
+    if(q){
+      const hay = [b.tags,b.label,b.monitor||'',...b.issues.map(i=>i.text)].join(' ').toLowerCase();
+      return q.split(/\s+/).every(w=>hay.includes(w));
+    }
+    return true;
+  });
+}
+
+const MONTH_KO = {'04':'4월','05':'5월','06':'6월','07':'7월','08':'8월','09':'9월','10':'10월','11':'11월','12':'12월','01':'1월','02':'2월','03':'3월'};
+
+function renderDates(){
+  const list = document.getElementById('dateList');
+  const filtered = getFilteredBriefs();
+  list.innerHTML = '';
+
+  const rc = document.getElementById('resultCount');
+  if(rc) rc.textContent = filtered.length === briefs.length
+    ? `전체 ${briefs.length}건`
+    : `${filtered.length}건 / 전체 ${briefs.length}건`;
+
+  if(filtered.length === 0){
+    list.innerHTML = '<div style="padding:24px 8px;text-align:center;color:#bbb;font-size:13px">검색 결과 없음</div>';
+    document.getElementById('previewCol').innerHTML = '<div class="empty-msg">검색 결과가 없습니다</div>';
+    return;
+  }
+
+  // 월별 그룹핑
+  const groups = {};
+  filtered.forEach(b=>{
+    const ym = b.date.slice(0,7);
+    if(!groups[ym]) groups[ym]=[];
+    groups[ym].push(b);
+  });
+
+  let firstItem = null, firstBrief = null;
+  Object.keys(groups).sort().reverse().forEach(ym=>{
+    const [y,m] = ym.split('-');
+    const section = document.createElement('div');
+    section.className = 'month-group';
+    const hdr = document.createElement('div');
+    hdr.className = 'month-header';
+    hdr.innerHTML = `${y}년 ${MONTH_KO[m]}<span class="month-count">${groups[ym].length}건</span>`;
+    section.appendChild(hdr);
+
+    groups[ym].forEach(b=>{
+      const isLatest = b===briefs[0];
+      const el = document.createElement('div');
+      el.className = 'date-item';
+      el.dataset.date = b.date;
+      el.innerHTML = `<div class="d-date">${b.label} (${b.day})${isLatest?'<span class="d-latest">최신</span>':''}</div>${b.hot?'<div class="d-badge">긴급이슈</div>':''}`;
+      el.onclick = ()=>{
+        document.querySelectorAll('.date-item').forEach(x=>x.classList.remove('selected'));
+        el.classList.add('selected');
+        renderPreview(b);
+      };
+      section.appendChild(el);
+      if(!firstItem){ firstItem=el; firstBrief=b; }
+    });
+    list.appendChild(section);
+  });
+
+  // 자동 선택
+  if(firstItem){ firstItem.classList.add('selected'); renderPreview(firstBrief); }
+}
+
+function onSearch(){ renderDates(); }
+
+function setFilter(f, btn){
+  activeFilter = f;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
+  btn.classList.add('active');
+  renderDates();
+}
+
+function renderPreview(b){
+  const col = document.getElementById('previewCol');
+  const issueHtml = b.issues.map(iss=>`<div class="issue-mini-item${iss.type==='hot'?' hot':iss.type==='pol'?' pol':''}">${iss.text}</div>`).join('');
+  col.innerHTML = `
+    <div class="preview-card">
+      <div class="preview-header">
+        <div class="preview-header-title">번역 정리 — ${b.label} (${b.day})</div>
+        <div class="preview-header-meta">Argus Media &nbsp;·&nbsp; ${b.tags}</div>
+      </div>
+      <div class="preview-body">
+        <div class="price-sec-label">암모니아 현물가 ($/t)</div>
+        <table class="price-table">
+          <tr><td class="region">중동 fob</td><td class="num">${b.prices.me}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.me)]}">${chgLabel(b.chg.me)}</td></tr>
+          <tr><td class="region">동아시아 cfr</td><td class="num">${b.prices.ea}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.ea)]}">${chgLabel(b.chg.ea)}</td></tr>
+          <tr><td class="region">NW유럽 cfr</td><td class="num">${b.prices.nwe}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.nwe)]}">${chgLabel(b.chg.nwe)}</td></tr>
+          <tr><td class="region">미국걸프 cfr</td><td class="num">${b.prices.usg}</td><td class="chg" style="color:${clrMap[chgClass(b.chg.usg)]}">${chgLabel(b.chg.usg)}</td></tr>
+        </table>
+        <div class="issue-sec-label">핵심 이슈 (5)</div>
+        ${issueHtml}
+        <div class="monitor-mini"><strong>★ 모니터링 포인트</strong>${b.monitor}</div>
+      </div>
+      <div class="preview-footer">
+        <div style="display:flex;gap:8px">
+          <a href="https://drive.google.com/drive/folders/1JOUk34BldofDOoZJMqAO4pXajJ7EO5IM" target="_blank" class="btn-src-sm">📄 원문 PDF</a>
+          <a href="${b.ocrUrl||'#'}" target="_blank" class="btn-src-sm">📝 번역본</a>
+        </div>
+        <a href="briefs/${b.date.replace(/-/g,'')}.html" class="btn-view">전체 정리본 →</a>
+      </div>
+    </div>`;
+}
+
+function renderCharts(){
+  const sorted = briefs.slice().reverse();
+  // 암모니아 가격이 있는 항목만 가격 차트에 사용 (수소 전용 브리핑 제외 → 선 끊김 방지)
+  const ammOnly  = sorted.filter(b => b.prices.me !== null);
+  const jklabOnly = sorted.filter(b => b.prices.jklab !== null);
+  const opts = {
+    responsive:true, maintainAspectRatio:false,
+    interaction:{mode:'index',intersect:false},
+    plugins:{legend:{display:false},tooltip:{backgroundColor:'#fff',borderColor:'#d8dde8',borderWidth:1,titleColor:'#0C447C',bodyColor:'#444',padding:10,callbacks:{label:c=>` ${c.dataset.label}: $${c.parsed.y}`}}},
+    scales:{x:{grid:{color:'#f0f0f0'},ticks:{color:'#888',font:{size:11}}},y:{grid:{color:'#f0f0f0'},ticks:{color:'#888',font:{size:11},callback:v=>'$'+v}}}
+  };
+  new Chart(document.getElementById('priceChart'),{type:'line',data:{labels:ammOnly.map(b=>b.label),datasets:[
+    {label:'중동 fob',      data:ammOnly.map(b=>b.prices.me),  borderColor:'#D85A30',borderWidth:2,pointRadius:4,tension:.3,fill:false},
+    {label:'동아시아 cfr',  data:ammOnly.map(b=>b.prices.ea),  borderColor:'#185FA5',borderWidth:2,pointRadius:4,tension:.3,fill:false},
+    {label:'NW유럽 cfr',    data:ammOnly.map(b=>b.prices.nwe), borderColor:'#639922',borderWidth:2,pointRadius:4,tension:.3,fill:false},
+    {label:'미국걸프 cfr',  data:ammOnly.map(b=>b.prices.usg), borderColor:'#8B5CF6',borderWidth:2,pointRadius:4,tension:.3,fill:false,borderDash:[4,3]}
+  ]},options:opts});
+  new Chart(document.getElementById('jklabChart'),{type:'line',data:{labels:jklabOnly.map(b=>b.label),datasets:[
+    {label:'JKLAB cfr 울산', data:jklabOnly.map(b=>b.prices.jklab), borderColor:'#0C447C',backgroundColor:'rgba(12,68,124,.1)',borderWidth:2.5,pointRadius:5,tension:.3,fill:true},
+    {label:'중동 fob (참조)', data:jklabOnly.map(b=>b.prices.me),   borderColor:'#FAC775',borderWidth:2,pointRadius:4,tension:.3,fill:false,borderDash:[5,4]}
+  ]},options:opts});
+}
+
+// 키보드 네비게이션 (↑↓로 날짜 이동)
+document.addEventListener('keydown', e=>{
+  if(e.target.tagName==='INPUT') return;
+  const items = [...document.querySelectorAll('.date-item')];
+  if(!items.length) return;
+  const idx = items.findIndex(el=>el.classList.contains('selected'));
+  let next = -1;
+  if(e.key==='ArrowDown') next = Math.min(idx+1, items.length-1);
+  if(e.key==='ArrowUp')   next = Math.max(idx-1, 0);
+  if(next>=0 && next!==idx){
+    items[next].click();
+    items[next].scrollIntoView({block:'nearest'});
+    e.preventDefault();
+  }
+});
+
+function switchTab(tab,btn){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(tab).classList.add('active');
+  btn.classList.add('active');
+}
+
+function handleLogout(){
+  AUTH.logout();
+  window.location.replace('login.html');
+}
+
+function updateStatCards(){
+  // 최신 암모니아 가격이 있는 브리핑
+  const latestAmm = briefs.find(b=>b.prices.me!==null);
+  const latestJklab = briefs.find(b=>b.prices.jklab!==null);
+  if(latestAmm){
+    const meCard = document.querySelector('#statMe .stat-val');
+    const meSub = document.querySelector('#statMe .stat-sub');
+    if(meCard) meCard.textContent = '$'+latestAmm.prices.me;
+    if(meSub) meSub.textContent = latestAmm.label+' 기준 · '+chgLabel(latestAmm.chg.me);
+    const nweCard = document.querySelector('#statNwe .stat-val');
+    const nweSub = document.querySelector('#statNwe .stat-sub');
+    if(nweCard) nweCard.textContent = '$'+latestAmm.prices.nwe;
+    if(nweSub) nweSub.textContent = latestAmm.label+' 기준 · '+chgLabel(latestAmm.chg.nwe);
+  }
+  if(latestJklab){
+    const jklabCard = document.querySelector('#statJklab .stat-val');
+    if(jklabCard) jklabCard.textContent = latestJklab.prices.jklab+' $/t';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  const totalEl = document.getElementById('totalCount');
+  if(totalEl) totalEl.textContent = briefs.length;
+  renderDates();
+  renderCharts();
+  updateStatCards();
+});
+</script>
+</body>
+</html>
