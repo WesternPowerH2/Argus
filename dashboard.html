@@ -196,6 +196,33 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-07-17', label:'7월 17일', day:'금', hot:false, tags:'유럽가스4개월최고 · EU ETS무상할당연장 · 사우디그린암모니아',
+    ocrUrl:'https://docs.google.com/document/d/1yNdYsk3KohcHbyYM_V_uzYbnwxpbckWn78nqW_oICag/edit?usp=drivesdk',
+    prices:{me:610, ea:675, nwe:700, usg:665, jklab:859.83}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'',    text:'유럽 가스가 4개월래 최고치 — TTF 하루새 +6%, $19/mnBtu 상회, 생산원가 $800/t 육박'},
+      {type:'pol', text:'EU, ETS 무상할당 2040년까지 연장 추진 — 탈탄소 투자 조건부'},
+      {type:'pol', text:'EU ETS 수익 최소 50% 산업 탈탄소 투자 배분 제안, MSR 수용률 24%→12%로 하향'},
+      {type:'',    text:'사우디 HEIC-中 CC7, 연 100만톤 규모 그린암모니아 프로젝트 파트너십 체결'},
+    ], monitor:'TTF 초강세 지속 여부와 현물가 반영 시점 · EU ETS 무상할당 연장·MSR 인하안 확정 일정 · 사우디 HEIC-CC7 프로젝트 후속 진행상황 · 봉쇄 이전 이탈 이란 선박의 인도 도착 영향' },
+  { date:'2026-07-16', label:'7월 16일', day:'목', hot:true, tags:'동부가격급락 · 美봉쇄실제집행 · 인도선원배치중단',
+    ocrUrl:'https://docs.google.com/document/d/1S2gMZP0Cn3Pob9PPHuAr5TcJcPdZU7ebDrqTSWVpbRs/edit?usp=drivesdk',
+    prices:{me:610, ea:675, nwe:700, usg:665, jklab:859.83}, chg:{me:'-70', ea:'-65', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'동부 가격 급락 — 중동 fob $70·동아시아 cfr $65 하락, 수요파괴가 공급차질 압도'},
+      {type:'hot', text:'美, 대이란 해상봉쇄 집행 재개 — 위반 선박 무력화·항로 변경 조치 착수'},
+      {type:'pol', text:'인도, 호르무즈 항로 선원 배치 중단 지시 — 승선 인력 부족 우려'},
+      {type:'pol', text:'영국, CBAM 탄소가격 인정(Price Relief) 세부 요건 발표'},
+    ], monitor:'동아시아·중동 급락세 저점 확인 여부 · 美 봉쇄 실제 집행(선박 무력화) 범위 확대 여부 · 인도발 승선 중단이 호르무즈 항로 선복에 미치는 영향 · 영국판 CBAM 세부 규칙 확정 일정' },
+  { date:'2026-07-15', label:'7월 15일', day:'수', hot:true, tags:'이란걸프위협확대 · 인도관세면제종료 · 유럽가스원가상승',
+    ocrUrl:'https://docs.google.com/document/d/1RuKk6Uwdf0Fo67m75slfGij3VDEysTqMe9Jet5dllgA/edit?usp=drivesdk',
+    prices:{me:680, ea:740, nwe:700, usg:665, jklab:859.83}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'이란, 美 봉쇄 재개 보복으로 호르무즈 너머 걸프만 석유·가스 수출로까지 위협 확대'},
+      {type:'pol', text:'인도, 암모니아 수입관세(5%) 면제 조치 오늘부로 종료 — 추가 연장 미발표'},
+      {type:'',    text:'유럽 가스가 상승세 지속 — NW유럽 생산원가 $661/t fob, 주간 +$59'},
+      {type:'',    text:'호르무즈 해협 통항량, 여전히 최저 수준 유지'},
+    ], monitor:'이란의 걸프 수출로 위협이 실제 행동으로 이어지는지 여부 · 인도 수입관세 면제 종료 이후 추가 연장 발표 여부 · 유럽 TTF 상승세의 현물가 반영 시점 · 美 상원 신규 대러 제재 법안 진전 여부' },
   { date:'2026-07-14', label:'7월 14일', day:'화', hot:true, tags:'美해상봉쇄재실시 · 중국오퍼상승반전 · JKLAB859달러로하향',
     ocrUrl:'https://docs.google.com/document/d/1LEO_33Y_FCl22H19yW268ppNPYRNpY7yk8vNPT5G3tA/edit?usp=drivesdk',
     prices:{me:680, ea:740, nwe:700, usg:665, jklab:859.83}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
