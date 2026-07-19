@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>암모니아 브리핑 — 2026.07.15</title>
+<script src="../auth.js"></script>
+<script>(function() { AUTH.requireAuth(); })();</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',sans-serif;background:#f4f6fa;color:#1a1a1a;font-size:14px;line-height:1.6}
+.wrap{max-width:720px;margin:24px auto;padding:0 16px 40px}
+.header{border-left:5px solid #0C447C;padding:12px 16px;margin-bottom:20px;background:#EEF4FB;border-radius:0 8px 8px 0}
+.header-badge{display:inline-block;font-size:10px;font-weight:700;background:#0C447C;color:#fff;padding:2px 8px;border-radius:20px;margin-bottom:6px;letter-spacing:.06em}
+.header-title{font-size:18px;font-weight:700;color:#0C447C}
+.header-meta{font-size:12px;color:#185FA5;margin-top:4px;display:flex;gap:12px;flex-wrap:wrap}
+.header-meta span{display:flex;align-items:center;gap:4px}
+.back-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:#fff;border:1.5px solid #85B7EB;border-radius:7px;font-size:12px;font-weight:600;color:#0C447C;text-decoration:none;margin-bottom:16px;cursor:pointer}
+.back-btn:hover{background:#E6F1FB}
+.source-bar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.btn-src{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:7px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:all .15s}
+.btn-orig{background:#0C447C;color:#fff}.btn-orig:hover{background:#185FA5}
+.btn-trans{background:#fff;color:#0C447C;border:1.5px solid #85B7EB}.btn-trans:hover{background:#E6F1FB}
+.section-label{font-size:11px;font-weight:700;letter-spacing:.08em;color:#888;text-transform:uppercase;margin:20px 0 10px}
+.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:8px}
+.price-card{padding:10px 14px;border-radius:8px;border:0.5px solid #e0e0e0;background:#fff}
+.price-label{font-size:11px;color:#666;margin-bottom:2px}
+.price-val{font-size:22px;font-weight:700;color:#0C447C}
+.price-unit{font-size:11px;color:#888;font-weight:400}
+.price-chg{font-size:12px;font-weight:600;margin-top:3px}
+.up{color:#D85A30}.nc{color:#639922}.dn{color:#378ADD}
+.jklab-row{background:#fff;border:0.5px solid #e0e0e0;border-radius:8px;padding:10px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.jklab-label{font-size:12px;color:#555}
+.jklab-val{font-size:18px;font-weight:700;color:#0C447C}
+.jklab-chg{font-size:12px;font-weight:600}
+.issue-card{border-radius:10px;padding:14px 16px;margin-bottom:10px;border:0.5px solid}
+.issue-hot{background:#FFF4EF;border-color:#F0997B}.issue-hot .issue-title{color:#712B13}
+.issue-mid{background:#F0F7FF;border-color:#85B7EB}.issue-mid .issue-title{color:#0C447C}
+.issue-pol{background:#F7F0FF;border-color:#B59BDB}.issue-pol .issue-title{color:#3B1C7A}
+.issue-header{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px}
+.issue-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.badge-hot{background:#F0997B;color:#4A1B0C}
+.badge-watch{background:#85B7EB;color:#042C53}
+.badge-pol{background:#B59BDB;color:#1E0A4A}
+.issue-title{font-weight:700;font-size:14px;line-height:1.4}
+.issue-divider{height:0.5px;background:#e0e0e0;margin:10px 0}
+.trans-quote{background:rgba(255,255,255,0.7);border-radius:6px;padding:8px 12px;margin:8px 0;font-size:12px;color:#555;line-height:1.7;border-left:3px solid #d0d0d0;font-style:italic}
+.trans-label{font-size:10px;font-weight:700;color:#aaa;letter-spacing:.06em;margin-bottom:4px}
+.issue-bullets{margin:0;padding:0;list-style:none}
+.issue-bullets li{font-size:13px;color:#333;padding:3px 0 3px 16px;position:relative;line-height:1.6}
+.issue-bullets li::before{content:'·';position:absolute;left:4px;color:#888;font-weight:700}
+.issue-bullets li strong{color:#0C447C}
+.arrow-point{font-size:12px;color:#185FA5;font-weight:600;margin-top:10px;padding:8px 12px;background:rgba(255,255,255,0.6);border-radius:6px;border-left:3px solid #185FA5}
+.arrow-point-hot{font-size:12px;color:#712B13;font-weight:600;margin-top:10px;padding:8px 12px;background:rgba(255,255,255,0.6);border-radius:6px;border-left:3px solid #F0997B}
+.arrow-point-pol{font-size:12px;color:#3B1C7A;font-weight:600;margin-top:10px;padding:8px 12px;background:rgba(255,255,255,0.6);border-radius:6px;border-left:3px solid #B59BDB}
+.trend-list{background:#fff;border-radius:8px;border:0.5px solid #e0e0e0;overflow:hidden;margin-bottom:16px}
+.trend-item{padding:10px 16px;border-bottom:0.5px solid #f0f0f0;font-size:13px;color:#333;display:flex;gap:10px;align-items:flex-start;line-height:1.6}
+.trend-item:last-child{border-bottom:none}
+.dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.dot-red{background:#D85A30}.dot-blue{background:#378ADD}.dot-gray{background:#aaa}
+.monitor-box{border-radius:8px;background:#FFFBEF;border:0.5px solid #FAC775;padding:14px 16px;margin-bottom:16px}
+.monitor-title{font-size:12px;font-weight:700;color:#854F0B;margin-bottom:10px;letter-spacing:.04em;display:flex;align-items:center;gap:6px}
+.monitor-row{font-size:13px;color:#412402;margin-bottom:8px;display:grid;grid-template-columns:80px 1fr;gap:8px;align-items:baseline}
+.monitor-row:last-child{margin-bottom:0}
+.monitor-key{color:#854F0B;font-weight:700;font-size:12px}
+.monitor-val{line-height:1.6}
+.footer{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-top:0.5px solid #e0e0e0;font-size:12px;color:#888;flex-wrap:wrap;gap:8px}
+.footer-src{display:flex;gap:16px}
+.footer-src a{color:#185FA5;text-decoration:none;font-weight:500}
+.footer-src a:hover{text-decoration:underline}
+.nav-btns{display:flex;gap:8px;margin-top:20px;justify-content:space-between}
+.nav-btn{padding:9px 16px;border-radius:7px;font-size:12px;font-weight:600;text-decoration:none;background:#fff;color:#0C447C;border:1.5px solid #85B7EB}
+.nav-btn:hover{background:#E6F1FB}
+.nav-btn.next{background:#0C447C;color:#fff;border-color:#0C447C}
+.nav-btn.next:hover{background:#185FA5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-btn" href="../dashboard.html">← 아카이브로 돌아가기</a>
+  <div class="header">
+    <div class="header-badge">ARGUS MEDIA · 번역 정리본</div>
+    <div class="header-title">암모니아 일간 브리핑</div>
+    <div class="header-meta">
+      <span>📅 2026년 7월 15일 (수)</span>
+      <span>📄 Argus Ammonia 제26-135호</span>
+      <span>🏢 서부발전 수소사업실</span>
+    </div>
+  </div>
+
+  <div class="source-bar">
+    <a class="btn-src btn-orig" href="https://drive.google.com/drive/folders/1BjFJ8bDzWrpZXUk12xTbO26u4rC2hXnr" target="_blank"><span>📂</span> 원문 PDF</a>
+    <a class="btn-src btn-trans" href="https://docs.google.com/document/d/1RuKk6Uwdf0Fo67m75slfGij3VDEysTqMe9Jet5dllgA/edit?usp=drivesdk" target="_blank"><span>📄</span> 번역본</a>
+  </div>
+
+  <div class="section-label">📊 암모니아 일일 가격 (2026년 7월 15일)</div>
+  <div class="price-grid">
+    <div class="price-card"><div class="price-label">중동 fob</div><div class="price-val">680 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전일 동일 (보합)</span></div>
+    <div class="price-card"><div class="price-label">동아시아 cfr</div><div class="price-val">740 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전일 동일 (보합)</span></div>
+    <div class="price-card"><div class="price-label">NW유럽 cfr</div><div class="price-val">700 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전일 동일 (보합)</span></div>
+    <div class="price-card"><div class="price-label">미국 걸프 cfr</div><div class="price-val">665 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전일 동일 (보합)</span></div>
+  </div>
+  <div class="jklab-row">
+    <div>
+      <div class="jklab-label">JKLAB cfr 울산 <span style="color:#aaa;font-size:11px">(45Q 세액공제 미포함, 주간)</span></div>
+      <div class="jklab-val">859.83 <span style="font-size:12px;font-weight:400;color:#888">$/t</span></div>
+    </div>
+    <div class="jklab-chg nc">━ 전주 대비 동일 (-13.70, 갱신 없음)</div>
+  </div>
+
+  <div class="section-label">🔥 핵심 이슈</div>
+
+  <div class="issue-card issue-hot">
+    <div class="issue-header">
+      <span class="issue-badge badge-hot">🔴 빅이슈</span>
+      <div class="issue-title">이란, 美 봉쇄 재개 보복으로 호르무즈 너머 걸프만 석유·가스 수출로까지 위협 확대</div>
+    </div>
+    <div class="trans-quote">
+      <div class="trans-label">ARGUS 원문 번역</div>
+      "이란 혁명수비대(IRGC)는 트럼프 행정부의 화요일 이란 항구 봉쇄 재실시에 대한 보복으로, 호르무즈 해협 너머 중동 걸프만 석유·가스 수출 경로를 교란하겠다고 위협했습니다."
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>IRGC, 美의 대이란 항구 봉쇄 재개(7/14)에 대한 보복으로 걸프 수출로 위협 예고</li>
+      <li>위협 대상이 호르무즈 해협을 넘어 걸프만 전역 수출로로 확대될 경우 리스크 범위 확대</li>
+    </ul>
+    <div class="arrow-point-hot">→ 위협이 현실화되면 사우디·UAE 등 역내 전체 수출망까지 공급 우려 재점화 가능</div>
+  </div>
+
+  <div class="issue-card issue-pol">
+    <div class="issue-header">
+      <span class="issue-badge badge-pol">🟣 정책</span>
+      <div class="issue-title">인도, 암모니아 수입관세(5%) 면제 조치 오늘부로 종료 — 추가 연장 미발표</div>
+    </div>
+    <div class="trans-quote">
+      <div class="trans-label">ARGUS 원문 번역</div>
+      "인도 정부는 美-이란 전쟁에 따른 암모니아 가격 급등과 공급 우려에 대응해 4월 1일부터 5% 관세를 면제했으며, 6월 30일에서 7월 15일로 한 차례 연장했으나 추가 연장은 아직 발표하지 않았습니다."
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>4/1 최초 시행 → 6/30 → <strong>7/15</strong>로 1차 연장, 오늘 종료 예정</li>
+      <li>추가 연장 여부 미확정 — 관세 복원 시 인도 수입비용 상승 압력</li>
+    </ul>
+    <div class="arrow-point-pol">→ 관세 복원 확정 시 인도 수입가 상승, 안 그래도 위축된 수요에 추가 부담</div>
+  </div>
+
+  <div class="issue-card issue-mid">
+    <div class="issue-header">
+      <span class="issue-badge badge-watch">👀 모니터링</span>
+      <div class="issue-title">유럽 가스가 상승세 지속 — NW유럽 생산원가 $661/t fob, 주간 +$59</div>
+    </div>
+    <div class="trans-quote">
+      <div class="trans-label">ARGUS 원문 번역</div>
+      "Argus는 오늘 NW유럽 생산원가를 톤당 $661(fob)로 추산했으며, 이는 美-이란 긴장 고조에 따라 네덜란드 TTF 근월물 가격이 지속 상승하며 주간 기준 $59 오른 수치입니다. 오늘 가격 상승은 생산원가를 $700/t fob 이상으로 확실히 끌어올릴 것입니다."
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>TTF 익월물, 오늘 오후 거래에서 $18/mnBtu 상회 지속</li>
+      <li>이론상 생산원가가 현물가($700/t cfr)에 근접·상회하는 수준까지 도달</li>
+    </ul>
+    <div class="arrow-point">→ 원가 상승 지속시 유럽 현물가에도 상방 압력이 반영될 가능성</div>
+  </div>
+
+  <div class="issue-card issue-mid">
+    <div class="issue-header">
+      <span class="issue-badge badge-watch">👀 모니터링</span>
+      <div class="issue-title">호르무즈 해협 통항량, 여전히 최저 수준 유지</div>
+    </div>
+    <div class="trans-quote">
+      <div class="trans-label">ARGUS 원문 번역</div>
+      "해양교통정보 사이트 MarineTraffic에 따르면, 지난 하루간 호르무즈 해협을 통과하는 선박 통행량은 최소 수준을 유지했습니다."
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>美 봉쇄 재개 이후 통항 정상화 흐름이 사실상 멈춘 상태</li>
+    </ul>
+    <div class="arrow-point">→ 통항 재개 지연이 장기화될 경우 이란발 물량 공급 차질도 함께 장기화 우려</div>
+  </div>
+
+  <div class="section-label">📈 주요 동향</div>
+  <div class="trend-list">
+    <div class="trend-item"><div class="dot dot-gray"></div><div>美 cfr $665·fob $625 보합, 7월 탬파 결산가 유지</div></div>
+    <div class="trend-item"><div class="dot dot-gray"></div><div>동아시아 cfr $740 보합, 한국 외 대부분 8월말까지 물량 확보 완료</div></div>
+    <div class="trend-item"><div class="dot dot-blue"></div><div>베네수엘라 첫 유럽행 화물 선적 — Trader Integrity호, 호세항→스페인 카스테욘, 약 6,000t</div></div>
+    <div class="trend-item"><div class="dot dot-gray"></div><div>동남아 일부 생산자 $700/t fob 이하 오퍼 제시, 수요 제한적</div></div>
+    <div class="trend-item"><div class="dot dot-gray"></div><div>인도 Fact, 연간구매입찰 마감 7/16로 재연장(코친항 인도 최대 93,500t)</div></div>
+    <div class="trend-item"><div class="dot dot-gray"></div><div>인도 그린수소 프로젝트, 해외수요 부진으로 지연 — 업계는 보조금 기한 완화 기대</div></div>
+  </div>
+
+  <div class="section-label">🎯 모니터링 포인트</div>
+  <div class="monitor-box">
+    <div class="monitor-title">⚠️ 이번 주 핵심 모니터링</div>
+    <div class="monitor-row"><div class="monitor-key">해상봉쇄</div><div class="monitor-val">이란의 걸프 수출로 위협이 실제 행동으로 이어지는지 여부</div></div>
+    <div class="monitor-row"><div class="monitor-key">인도관세</div><div class="monitor-val">5% 수입관세 면제 종료 이후 추가 연장 발표 여부</div></div>
+    <div class="monitor-row"><div class="monitor-key">유럽가스</div><div class="monitor-val">TTF 상승세가 실제 현물가에 반영되는 시점</div></div>
+    <div class="monitor-row"><div class="monitor-key">러시아제재</div><div class="monitor-val">美 상원 신규 대러 제재 법안 진전 여부</div></div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-src">
+      <a href="https://www.argusmedia.com" target="_blank">Argus Media</a>
+      <a href="../dashboard.html">← 아카이브</a>
+    </div>
+    <div>© 2026 Argus Media Group | 라이선스: 방희빈, 한국서부발전(주)</div>
+  </div>
+
+  <div class="nav-btns">
+    <a class="nav-btn" href="20260714.html">← 이전 (7월 14일)</a>
+    <a class="nav-btn next" href="20260716.html">다음 (7월 16일) →</a>
+  </div>
+</div>
+</body>
+</html>
