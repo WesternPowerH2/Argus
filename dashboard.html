@@ -196,6 +196,38 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-08-11', label:'8월 11일', day:'화', hot:false, tags:'호르무즈통항7척2주최저 · 美존스법면제연장 · 베네수엘라증산계획',
+    ocrUrl:'https://docs.google.com/document/d/1i6lNq9hRTchT2jsCcVVAJbif_OE3BO1p6sKwc_QXnBE/edit?usp=drivesdk',
+    prices:{me:540, ea:615, nwe:700, usg:635, jklab:855.86}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'pol', text:'호르무즈 해협 통항 선박 단 7척 — 2주만에 최저치'},
+      {type:'pol', text:'美, 존스법 면제 90일 추가연장하되 감독 강화'},
+      {type:'', text:'베네수엘라, 암모니아·요소 증산 계획 발표'}
+    ], monitor:'호르무즈 이란-오만 최종합의 타결 시점 및 통항량 회복 여부 · 존스법 강화된 사전협의 절차의 걸프만 물류 실제 영향 · 베네수엘라 페퀴벤 구조조정 및 증산계획 구체화 여부 · 브라질대두 2026-27 파종기 비료수요 전망 및 엘니뇨 영향' },
+  { date:'2026-08-10', label:'8월 10일', day:'월', hot:false, tags:'라인강운항거의중단 · 아드녹선박이란미사일피격 · 지잔정유소재공격',
+    ocrUrl:'https://docs.google.com/document/d/15_ByjHI4SruVODWQIVqPRcOKcyyysIo3bndzQy3VehM/edit?usp=drivesdk',
+    prices:{me:540, ea:615, nwe:700, usg:635, jklab:855.51}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'pol', text:'UAE 아드녹 선박, 호르무즈 통과 중 이란 미사일 피격'},
+      {type:'', text:'라인강 바지선 운항 거의 중단 — 유럽 내륙물류 차질 확대'},
+      {type:'', text:'사우디 마덴, 인산염 생산·암모니아 수출 확대 계획 없어'}
+    ], monitor:'라인강 바지선 운항 정상화 시점 — 물류비용 추가상승 여부 · 호르무즈 아드녹 피격 이후 추가 무력충돌 여부 및 통항 선박수 추이 · 지잔정유소 사우디 지잔 정유소 가동재개 시점 · 美러제재법 러시아 제재법안 발효시 비료시장 파급효과' },
+  { date:'2026-08-07', label:'8월 7일', day:'금', hot:false, tags:'전지역보합유지 · CF도널드슨빌6호재가동 · 中2차요소할당발표',
+    ocrUrl:'https://docs.google.com/document/d/1tRAYQFo9Z7XTn4ku7-7YG9TECt-j0ElkdELn4zQ-IRU/edit?usp=drivesdk',
+    prices:{me:540, ea:615, nwe:700, usg:635, jklab:855.51}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'', text:'CF, 도널드슨빌 6호기 정비 마치고 생산 재개'},
+      {type:'pol', text:'트럼프, 호르무즈 재개방 "임박" 재차 강조 — 공식발표는 아직'},
+      {type:'', text:'질소시장, 2027년까지 공급부족 지속 전망 — CF·Nutrien'}
+    ], monitor:'호르무즈 공식 합의 발표 시점 — "임박" 발언의 실제 타결 여부 · 中요소할당 2차 250만톤 할당 실제 선적개시 시점 · 美질소공급 CF·Nutrien 전망대로 하반기 공급부족 지속 여부 · 파나마운하 수심제한 연장에 따른 운송비 추가 상승폭' },
+  { date:'2026-08-06', label:'8월 6일', day:'목', hot:false, tags:'동아시아30달러급락 · 파우스티나암모니아유지 · 호르무즈합의모색',
+    ocrUrl:'https://docs.google.com/document/d/14_W3udBVKglccDA4iffg0JG0oRf7Ll3MM6EOgITNJFY/edit?usp=drivesdk',
+    prices:{me:540, ea:615, nwe:700, usg:635, jklab:855.51}, chg:{me:'-10', ea:'-30', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'', text:'모자이크, 브라질·美 파우스티나 인산염 전면 가동중단에도 암모니아는 100% 가동 유지'},
+      {type:'pol', text:'트럼프, 호르무즈 해협 재개방 협상 이번주 타결 가능성 시사'},
+      {type:'', text:'동남아 FOB 가격 톤당 75달러 급락 — 수요부진 심화'}
+    ], monitor:'호르무즈 이란·오만 공동성명 발표 시점 및 통행료 부과 여부 · 동남아 추가 하락압력 지속 여부 — $450/t대 진입 가능성 · 유황공급 모로코·브라질 인산염 감산 확산 속도 · CF블루포인트 루이지애나 블루포인트원 착공 진행상황' },
   { date:'2026-08-05', label:'8월 5일', day:'수', hot:false, tags:'모자이크파우스티나가동 · 미이란중재불투명 · 라인강수위최저기록',
     ocrUrl:'https://docs.google.com/document/d/1GNGVH3xDXwXev7pnkR4zfRznH_HaXm0ApKFGlbzeNfI/edit?usp=drivesdk',
     prices:{me:550, ea:645, nwe:700, usg:635, jklab:855.51}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
