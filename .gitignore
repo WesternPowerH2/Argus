@@ -18,3 +18,4 @@ apps_script_v2.js
 # OS 파일
 .DS_Store
 Thumbs.db
+test_api.bat
