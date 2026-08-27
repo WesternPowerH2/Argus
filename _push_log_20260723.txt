@@ -1,0 +1,183 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20260723111049
+사용자 이름: DESKTOP-VGNH71V\HeeBin
+RunAs 사용자: DESKTOP-VGNH71V\HeeBin
+구성 이름: 
+Machine: DESKTOP-VGNH71V (Microsoft Windows NT 10.0.22631.0)
+호스트 응용 프로그램: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell.exe -NoExit -ExecutionPolicy Bypass -Command & {Start-Transcript -Path 'C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\_push_log_20260723.txt' -Force; & 'C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\깃헙_자동업로드.ps1'; Stop-Transcript}
+프로세스 ID: 9200
+PSVersion: 5.1.22621.6345
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6345
+BuildVersion: 10.0.22621.6345
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\_push_log_20260723.txt입니다.
+
+════════════════════════════════════════════════════════
+ Argus H2 브리핑 포털 — GitHub 자동 업로드
+════════════════════════════════════════════════════════
+
+🔐 GitHub 인증 중...
+✅ 인증 완료: @WesternPowerH2
+
+📦 저장소 'Argus' 확인 중...
+PS>종료 오류(Invoke-RestMethod): "{"message":"Problems parsing JSON","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"400"}"
+⚠️  저장소 생성 응답: {"message":"Problems parsing JSON","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"400"}
+
+📤 파일 업로드 시작...
+  ⏭️  .gitignore (변경없음, 건너뜀)
+  ⏭️  .nojekyll (변경없음, 건너뜀)
+  ⏭️  auth.js (변경없음, 건너뜀)
+  ⏭️  dashboard.html (변경없음, 건너뜀)
+  ⏭️  index.html (변경없음, 건너뜀)
+  ⏭️  login.html (변경없음, 건너뜀)
+  ⏭️  _push_log.txt (변경없음, 건너뜀)
+  ⏭️  _push_log3.txt (변경없음, 건너뜀)
+  ⏭️  _push_log4.txt (변경없음, 건너뜀)
+  ⏭️  _push_log5.txt (변경없음, 건너뜀)
+"1"개의 인수가 있는 "ReadAllBytes"을(를) 호출하는 동안 예외가 발생했습니다. "'C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\_push_log_20260723
+.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다."
+위치 C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\깃헙_자동업로드.ps1:94 문자:5
++     $content = [System.IO.File]::ReadAllBytes($localPath)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : IOException
+"1"개의 인수가 있는 "ReadAllBytes"을(를) 호출하는 동안 예외가 발생했습니다. "'C:\Users\HeeBin\Documents\claude\Argus 수
+소정보지 정리\_push_log_20260723.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다."
+위치 C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\깃헙_자동업로드.ps1:94 문자:5
++     $content = [System.IO.File]::ReadAllBytes($localPath)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : IOException
+
+"5"개의 인수가 있는 "Copy"을(를) 호출하는 동안 예외가 발생했습니다. "값은 null일 수 없습니다.
+매개 변수 이름: source"
+위치 C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\깃헙_자동업로드.ps1:86 문자:5
++     [Array]::Copy($bytes, 0, $combined, $headerBytes.Length, $bytes.L ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+"5"개의 인수가 있는 "Copy"을(를) 호출하는 동안 예외가 발생했습니다. "값은 null일 수 없습니다.
+매개 변수 이름: source"
+위치 C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\깃헙_자동업로드.ps1:86 문자:5
++     [Array]::Copy($bytes, 0, $combined, $headerBytes.Length, $bytes.L ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+PS>종료 오류(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repository-content","status":"404"}"
+"1"개의 인수가 있는 "ToBase64String"을(를) 호출하는 동안 예외가 발생했습니다. "값은 null일 수 없습니다.
+매개 변수 이름: inArray"
+위치 C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\깃헙_자동업로드.ps1:110 문자:5
++     $encoded = [Convert]::ToBase64String($content)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+"1"개의 인수가 있는 "ToBase64String"을(를) 호출하는 동안 예외가 발생했습니다. "값은 null일 수 없습니다.
+매개 변수 이름: inArray"
+위치 C:\Users\HeeBin\Documents\claude\Argus 수소정보지 정리\깃헙_자동업로드.ps1:110 문자:5
++     $encoded = [Convert]::ToBase64String($content)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+PS>종료 오류(Invoke-RestMethod): "{"message":"Invalid request.\n\nFor 'properties/content', nil is not a string.","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"422"}"
+  ❌ _push_log_20260723.txt : {"message":"Invalid request.\n\nFor 'properties/content', nil is not a string.","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"422"}
+  ⏭️  _schtasks_change_result.txt (변경없음, 건너뜀)
+  ⏭️  .nojekyll (변경없음, 건너뜀)
+  ⏭️  briefs/20260407.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260408.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260409.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260410.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260413.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260414.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260415.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260416.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260417.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260420.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260421.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260422.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260424.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260428.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260430.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260501.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260505.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260506.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260507.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260508.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260511.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260512.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260512amm.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260513.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260514.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260515.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260518.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260519.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260520.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260521.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260526.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260527.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260528.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260529.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260601.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260602.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260603.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260604-DESKTOP-225M7AI.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260604.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260605.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260608.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260609.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260610.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260611.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260612.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260615.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260616.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260617.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260618.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260619.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260622.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260623.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260624.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260625.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260626.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260629.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260630.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260701.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260702.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260703.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260706.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260707.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260708.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260709.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260710.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260713.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260714.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260715.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260716.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260717.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260720.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260721.html (변경없음, 건너뜀)
+  ⏭️  briefs/20260722.html (변경없음, 건너뜀)
+
+✅ 85 / 86 개 파일 업로드 완료
+
+🌐 GitHub Pages 활성화 중...
+PS>종료 오류(Invoke-RestMethod): "{"message":"GitHub Pages is already enabled.","documentation_url":"https://docs.github.com/rest/pages/pages#create-a-apiname-pages-site","status":"409"}"
+✅ GitHub Pages 설정 완료!
+
+════════════════════════════════════════════════════════
+🎉 모든 설정 완료!
+
+🌐 포털 주소 (1~3분 후 활성화):
+   https://WesternPowerH2.github.io/Argus/
+
+📋 GitHub 저장소:
+   https://github.com/WesternPowerH2/Argus
+════════════════════════════════════════════════════════
+
+Press Enter to exit...
