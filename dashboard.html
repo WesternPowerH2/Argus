@@ -196,6 +196,42 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-10-16', label:'10월 16일', day:'금', hot:true, tags:'전 지역 보합 · 11월 협상 견조 · 英 CBAM 예시세율 발표 · ADB·日 AM Green 지원 · 獨 해외수소 €3억',
+    ocrUrl:'https://docs.google.com/document/d/178CF8NENWVMBBdMOXqfdilhVz8PpSUYMbUH4olGlZjg/edit?usp=drivesdk',
+    prices:{me:465, ea:535, nwe:670, usg:565, jklab:889.29}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'주말 보합 마감 — 11월물 협상 속 판매자 호가 점진 인상'},
+      {type:'pol', text:'英, CBAM 예시 세율·기본값 발표 — 비료 초기 비용 톤당 £5 미만'},
+      {type:'hot', text:'ADB·일본, 인도 AM Green 카키나다 재생암모니아 자금 지원 — 日 3사와 구매계약 추진'},
+      {type:'', text:'독일, 해외 재생수소·파생상품 투자에 €3억 투입 추진'}
+    ], monitor:'□ 유럽 $700 □ 중동 월말 선적 □ 英 CBAM □ 남해화학 입찰' },
+  { date:'2026-10-15', label:'10월 15일', day:'목', hot:true, tags:'전 지역 상승 · 중동 $465(+35) · Sorfert $625fob · 남해화학 2027 60만톤 입찰 · 사우디 STS 선적',
+    ocrUrl:'https://docs.google.com/document/d/1MDjPMeGPiH_seS4PaG1wnSeaYb41l9vRH0ZTji3eDUU/edit?usp=drivesdk',
+    prices:{me:465, ea:535, nwe:670, usg:565, jklab:889.29}, chg:{me:'+35', ea:'+5', nwe:'+10', usg:'+20'},
+    issues:[
+      {type:'hot', text:'가격 반등 가속 — 중동 $465(+35)·美걸프 $565(+20)·NWE $670(+10)·동아시아 $535(+5)'},
+      {type:'hot', text:'남해화학, 2027년 연간 약 60만톤 암모니아 구매 입찰 공고'},
+      {type:'pol', text:'사우디産 암모니아 STS 선적 — Searambler 2.55만톤 10/20 파라딥 도착 예정'},
+      {type:'', text:'Hydrogen Europe: EU 2030 재생수소 목표 달성엔 €500-600억 FID 필요'}
+    ], monitor:'□ 남해화학 2027 입찰 □ 중동 STS·호르무즈 □ 유럽 $700 □ 인도 입찰' },
+  { date:'2026-10-14', label:'10월 14일', day:'수', hot:true, tags:'중동 $430(+15)·동아시아 $530(+20) · 인도 수요 회복 · NWE 생산원가 $1,002 · 中 첫 그린암모니아 STS 벙커링',
+    ocrUrl:'https://docs.google.com/document/d/11viS5gvgUCDGRMkesNuVTUz-qGe-02lEzDlfbm7t-1M/edit?usp=drivesdk',
+    prices:{me:430, ea:530, nwe:660, usg:545, jklab:889.29}, chg:{me:'+15', ea:'+20', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'인도 수요 회복에 수에즈 동쪽 반등 — 중동 fob $430(+15)·동아시아 cfr $530(+20)'},
+      {type:'hot', text:'NWE 생산원가 $1,002(+71) — TTF 상승 반영'},
+      {type:'', text:'中, 세계 최초 상업용 STS 그린암모니아 벙커링 완료'},
+      {type:'pol', text:'英 CBAM 비료 부과액 매우 적을 것 · 호르무즈 혼란에 해운 판도 변화(SIBCON)'}
+    ], monitor:'□ 인도 입찰 □ 동남아 fob □ 유럽 생산원가 □ 英 CBAM' },
+  { date:'2026-10-13', label:'10월 13일', day:'화', hot:true, tags:'불가리아 Agropolychim·Neochim 가동중단 · 전 지역 보합 · 동아시아 2027 계약 中 전환 · JKLAB 889.29(+6.52)',
+    ocrUrl:'https://docs.google.com/document/d/1NRUFgliXKppdXrej2aEkobuHrpMbrU_OU1HgJxeo8xw/edit?usp=drivesdk',
+    prices:{me:415, ea:510, nwe:660, usg:545, jklab:889.29}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'불가리아 Agropolychim 정전·Neochim 비계획 정지 — 암모니아 수입수요 일시 감소 가능'},
+      {type:'hot', text:'동아시아 계약 구매자, 2027년 공급계약 中으로 전환 확대'},
+      {type:'', text:'인도, 황 확보로 암모니아 수요 회복 — 일부 $500 cfr 이상 입찰'},
+      {type:'pol', text:'트리니다드, Nutrien 공장 폐쇄 사유(원료 부족) 반박 · 러시아 에너지 휴전 확인 거부'}
+    ], monitor:'□ 불가리아 가동중단 □ 中 2027 계약 □ 인도 입찰 □ 트리니다드 Nutrien' },
   { date:'2026-10-12', label:'10월 12일', day:'월', hot:true, tags:'Sorfert 4만톤 $610fob · NWE $660(+20) · 호르무즈 STS 환적 · Andre M 여수行',
     ocrUrl:'https://docs.google.com/document/d/1Y06iX8Q161BXxCvXi8-FMOX4tY8dTQAiavATW6toGcM/edit?usp=drivesdk',
     prices:{me:415, ea:510, nwe:660, usg:545, jklab:882.77}, chg:{me:'nc', ea:'nc', nwe:'+20', usg:'nc'},
