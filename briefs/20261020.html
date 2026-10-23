@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>암모니아 브리핑 — 2026.10.20</title>
+<script src="../auth.js"></script>
+<script>(function() { AUTH.requireAuth(); })();</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',sans-serif;background:#f4f6fa;color:#1a1a1a;font-size:14px;line-height:1.6}
+.wrap{max-width:720px;margin:24px auto;padding:0 16px 40px}
+.header{border-left:5px solid #0C447C;padding:12px 16px;margin-bottom:20px;background:#EEF4FB;border-radius:0 8px 8px 0}
+.header-badge{display:inline-block;font-size:10px;font-weight:700;background:#0C447C;color:#fff;padding:2px 8px;border-radius:20px;margin-bottom:6px;letter-spacing:.06em}
+.header-title{font-size:18px;font-weight:700;color:#0C447C}
+.header-meta{font-size:12px;color:#185FA5;margin-top:4px;display:flex;gap:12px;flex-wrap:wrap}
+.header-meta span{display:flex;align-items:center;gap:4px}
+.back-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:#fff;border:1.5px solid #85B7EB;border-radius:7px;font-size:12px;font-weight:600;color:#0C447C;text-decoration:none;margin-bottom:16px;cursor:pointer}
+.back-btn:hover{background:#E6F1FB}
+.source-bar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.btn-src{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:7px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:all .15s}
+.btn-orig{background:#0C447C;color:#fff}.btn-orig:hover{background:#185FA5}
+.btn-trans{background:#fff;color:#0C447C;border:1.5px solid #85B7EB}.btn-trans:hover{background:#E6F1FB}
+.section-label{font-size:11px;font-weight:700;letter-spacing:.08em;color:#888;text-transform:uppercase;margin:20px 0 10px}
+.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:8px}
+.price-card{padding:10px 14px;border-radius:8px;border:0.5px solid #e0e0e0;background:#fff}
+.price-label{font-size:11px;color:#666;margin-bottom:2px}
+.price-val{font-size:22px;font-weight:700;color:#0C447C}
+.price-unit{font-size:11px;color:#888;font-weight:400}
+.price-chg{font-size:12px;font-weight:600;margin-top:3px}
+.up{color:#D85A30}.nc{color:#639922}.dn{color:#378ADD}
+.jklab-row{background:#fff;border:0.5px solid #e0e0e0;border-radius:8px;padding:10px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.jklab-label{font-size:12px;color:#555}
+.jklab-val{font-size:18px;font-weight:700;color:#0C447C}
+.jklab-chg{font-size:12px;font-weight:600}
+.issue-card{border-radius:10px;padding:14px 16px;margin-bottom:10px;border:0.5px solid}
+.issue-hot{background:#FFF4EF;border-color:#F0997B}.issue-hot .issue-title{color:#712B13}
+.issue-mid{background:#F0F7FF;border-color:#85B7EB}.issue-mid .issue-title{color:#0C447C}
+.issue-pol{background:#F7F0FF;border-color:#B59BDB}.issue-pol .issue-title{color:#3B1C7A}
+.issue-header{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px}
+.issue-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.badge-hot{background:#F0997B;color:#4A1B0C}
+.badge-watch{background:#85B7EB;color:#042C53}
+.badge-pol{background:#B59BDB;color:#1E0A4A}
+.issue-title{font-weight:700;font-size:14px;line-height:1.4}
+.issue-divider{height:0.5px;background:#e0e0e0;margin:10px 0}
+.trans-quote{background:rgba(255,255,255,0.7);border-radius:6px;padding:8px 12px;margin:8px 0;font-size:12px;color:#555;line-height:1.7;border-left:3px solid #d0d0d0;font-style:italic}
+.trans-label{font-size:10px;font-weight:700;color:#aaa;letter-spacing:.06em;margin-bottom:4px}
+.issue-bullets{margin:0;padding:0;list-style:none}
+.issue-bullets li{font-size:13px;color:#333;padding:3px 0 3px 16px;position:relative;line-height:1.6}
+.issue-bullets li::before{content:'·';position:absolute;left:4px;color:#888;font-weight:700}
+.issue-bullets li strong{color:#0C447C}
+.arrow-point{font-size:12px;color:#185FA5;font-weight:600;margin-top:10px;padding:8px 12px;background:rgba(255,255,255,0.6);border-radius:6px;border-left:3px solid #185FA5}
+.arrow-point-hot{font-size:12px;color:#712B13;font-weight:600;margin-top:10px;padding:8px 12px;background:rgba(255,255,255,0.6);border-radius:6px;border-left:3px solid #F0997B}
+.arrow-point-pol{font-size:12px;color:#3B1C7A;font-weight:600;margin-top:10px;padding:8px 12px;background:rgba(255,255,255,0.6);border-radius:6px;border-left:3px solid #B59BDB}
+.trend-list{background:#fff;border-radius:8px;border:0.5px solid #e0e0e0;overflow:hidden;margin-bottom:16px}
+.trend-item{padding:10px 16px;border-bottom:0.5px solid #f0f0f0;font-size:13px;color:#333;display:flex;gap:10px;align-items:flex-start;line-height:1.6}
+.trend-item:last-child{border-bottom:none}
+.dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.dot-red{background:#D85A30}.dot-blue{background:#378ADD}.dot-gray{background:#aaa}
+.monitor-box{border-radius:8px;background:#FFFBEF;border:0.5px solid #FAC775;padding:14px 16px;margin-bottom:16px}
+.monitor-title{font-size:12px;font-weight:700;color:#854F0B;margin-bottom:10px;letter-spacing:.04em;display:flex;align-items:center;gap:6px}
+.monitor-row{font-size:13px;color:#412402;margin-bottom:8px;display:grid;grid-template-columns:80px 1fr;gap:8px;align-items:baseline}
+.monitor-row:last-child{margin-bottom:0}
+.monitor-key{color:#854F0B;font-weight:700;font-size:12px}
+.monitor-val{line-height:1.6}
+.footer{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-top:0.5px solid #e0e0e0;font-size:12px;color:#888;flex-wrap:wrap;gap:8px}
+.footer-src{display:flex;gap:16px}
+.footer-src a{color:#185FA5;text-decoration:none;font-weight:500}
+.footer-src a:hover{text-decoration:underline}
+.nav-btns{display:flex;gap:8px;margin-top:20px;justify-content:space-between}
+.nav-btn{padding:9px 16px;border-radius:7px;font-size:12px;font-weight:600;text-decoration:none;background:#fff;color:#0C447C;border:1.5px solid #85B7EB}
+.nav-btn:hover{background:#E6F1FB}
+.nav-btn.next{background:#0C447C;color:#fff;border-color:#0C447C}
+.nav-btn.next:hover{background:#185FA5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-btn" href="../dashboard.html">← 아카이브로 돌아가기</a>
+  <div class="header">
+    <div class="header-badge">ARGUS MEDIA · 번역 정리본</div>
+    <div class="header-title">암모니아 일간 브리핑</div>
+    <div class="header-meta">
+      <span>📅 2026년 10월 20일 (화)</span>
+      <span>📄 Argus Ammonia 제26-203호</span>
+      <span>🏢 서부발전 수소사업실</span>
+    </div>
+  </div>
+
+  <div class="source-bar">
+    <a class="btn-src btn-orig" href="https://drive.google.com/file/d/1GAHOBLgmCT3iFYoSC-syp4J6-JDN6N-b/view" target="_blank"><span>📂</span> 원문 PDF</a>
+    <a class="btn-src btn-trans" href="https://docs.google.com/document/d/1aq5DBMGFBmBRNwPkJOXEMJy7AAhXOqM1bEwcdondP_Y/edit?usp=drivesdk" target="_blank"><span>📄</span> 번역본</a>
+  </div>
+
+  <div class="section-label">📊 암모니아 일일 가격 (2026년 10월 20일 (화))</div>
+  <div class="price-grid">
+    <div class="price-card"><div class="price-label">중동 fob</div><div class="price-val">465 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전거래일 동일 (보합)</span></div>
+    <div class="price-card"><div class="price-label">동아시아 cfr</div><div class="price-val">535 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전거래일 동일 (보합)</span></div>
+    <div class="price-card"><div class="price-label">NW유럽 cfr</div><div class="price-val">670 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전거래일 동일 (보합)</span></div>
+    <div class="price-card"><div class="price-label">미국 걸프 cfr</div><div class="price-val">565 <span class="price-unit">$/t</span></div><span class="price-chg nc">━ 전거래일 동일 (보합)</span></div>
+  </div>
+  <div class="jklab-row">
+    <div>
+      <div class="jklab-label">JKLAB cfr 울산 <span style="color:#aaa;font-size:11px">(45Q 세액공제 미포함, 주간 갱신)</span></div>
+      <div class="jklab-val">895.58 <span style="font-size:12px;font-weight:400;color:#888">$/t</span></div>
+    </div>
+    <div class="jklab-chg up">▲ 주간 갱신 (10/20), 전주比 +6.29</div>
+  </div>
+
+  <div class="section-label">🔥 핵심 이슈</div>
+
+  <div class="issue-card issue-hot">
+    <div class="issue-header">
+      <span class="issue-badge badge-hot">🔥 핵심</span>
+      <div class="issue-title">가격 보합이나 심리 강세 — 협상 진행 중, 추가 인상 가능성</div>
+    </div>
+    <div class="trans-quote">
+      <div class="trans-label">ARGUS 원문 번역</div>
+      "전 지역 가격은 신규 확정 거래 없이 안정적이었으나, 협상이 진행 중이며 다음 거래 결과가 곧 발표되고 추가 가격 인상이 예상됩니다."
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>NWE $670 cfr 유지 — 구매자들은 가격 상승 지속 예상</li>
+      <li>美걸프 fob $515 — Koch Green Endeavour(3만t) 10/19 Donaldsonville 선적, Oceanic Star 10/28·Ontario 11/4 입항 예정</li>
+      <li>Tampa: Mosaic 약 3만t 입고 예정(Yara 10/20-22 Navigator Yauza·Phoenix호)</li>
+    </ul>
+    <div class="arrow-point-hot">→ 다음 거래 공개 시 NWE·美걸프 상향 가능성</div>
+  </div>
+  <div class="issue-card issue-hot">
+    <div class="issue-header">
+      <span class="issue-badge badge-hot">🔥 핵심</span>
+      <div class="issue-title">中 현물 고$400대 fob 거래 후 호가 상승 — 이란산은 $300 미만 제시</div>
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>中: 직전 현물은 고$400대 fob, 난징 $500 fob 제시·일부 $520까지, 장쑤 구매 관심</li>
+      <li>인도 바이어 중국산 문의 있으나 가격 상승으로 거래 제약</li>
+      <li>중동 fob $465 유지 — 이란산 물량 $300/t fob 미만 제시설</li>
+      <li>동아시아 $535 — LFC Polar호 롄윈강 약 2.9만t 선적(10/18), 울산 하역 예정</li>
+    </ul>
+    <div class="arrow-point-hot">→ 中 호가 상승이 동아시아 cfr 지지 — 이란 저가 물량은 변수</div>
+  </div>
+  <div class="issue-card issue-pol">
+    <div class="issue-header">
+      <span class="issue-badge badge-pol">🏛 정책·지정학</span>
+      <div class="issue-title">EU 혁신기금, 수소 관련 23개 프로젝트 선정 / 호르무즈 인근 유조선 공격 증가</div>
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>EU 집행위, 최신 Innovation Fund 공모에서 수소 관련 23개 프로젝트 보조금 선정</li>
+      <li>UKMTO: 10/16 걸프 내 유조선 2척 공격 이후 상선 위협 증가</li>
+      <li>BASF–HSCC, 유럽 PA6 사업 50:50 합작 검토</li>
+    </ul>
+    <div class="arrow-point-pol">→ EU 수소 지원 확대 및 걸프 안보 리스크 동시 주시</div>
+  </div>
+  <div class="issue-card issue-mid">
+    <div class="issue-header">
+      <span class="issue-badge badge-watch">👀 모니터링</span>
+      <div class="issue-title">Croatia Petrokemija, 약 5개월 가동 중단 후 비료 생산 재개 / Belarus 칼리 4년 만에 美 도착</div>
+    </div>
+    <div class="issue-divider"></div>
+    <ul class="issue-bullets">
+      <li>Petrokemija 재가동 시작 — 유럽 공급 소폭 회복 요인</li>
+      <li>BPC 입상 MOP 첫 美 선적분 Nola 도착 (美 제재 해제 영향)</li>
+    </ul>
+    <div class="arrow-point">→ 유럽 비료 공급·교역 구도 변화 참고</div>
+  </div>
+
+  <div class="section-label">📈 주요 동향</div>
+  <div class="trend-list">
+    <div class="trend-item"><div class="dot dot-gray"></div><div>중동 $465·동아시아 $535·NWE $670·美걸프 $565 전 지역 보합 (美걸프 fob $515)</div></div>
+    <div class="trend-item"><div class="dot dot-red"></div><div>JKLAB cfr 울산 895.58 (+6.29, 주간 갱신)</div></div>
+    <div class="trend-item"><div class="dot dot-red"></div><div>Daily Marker 10월 MTD 평균: 중동 430.36·동아시아 515.00·NWE 642.50·美걸프 550.71</div></div>
+    <div class="trend-item"><div class="dot dot-red"></div><div>FIS 11월물: NWE $703·美걸프 $568·동아시아 $535·중동 $460</div></div>
+    <div class="trend-item"><div class="dot dot-gray"></div><div>Forward curve 11월: 중동 471.76·동아시아 540.34·NWE 674.34·美걸프 568.87</div></div>
+    <div class="trend-item"><div class="dot dot-gray"></div><div>CAPA NWE CBAM 반영가(면세/납부) 737.96 (-0.05)</div></div>
+  </div>
+
+  <div class="section-label">🎯 모니터링 포인트</div>
+  <div class="monitor-box">
+    <div class="monitor-title">⚠️ 이번 주 핵심 모니터링</div>
+    <div class="monitor-row"><div class="monitor-key">유럽</div><div class="monitor-val">다음 거래 체결가·가격 인상 폭</div></div>
+    <div class="monitor-row"><div class="monitor-key">중국</div><div class="monitor-val">현물 호가 $500-520 체결 여부</div></div>
+    <div class="monitor-row"><div class="monitor-key">중동</div><div class="monitor-val">이란산 저가 물량·호르무즈 위험</div></div>
+    <div class="monitor-row"><div class="monitor-key">미국</div><div class="monitor-val">Green Endeavour 이후 11월 거래</div></div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-src">
+      <a href="https://www.argusmedia.com" target="_blank">Argus Media</a>
+      <a href="../dashboard.html">← 아카이브</a>
+    </div>
+    <div>© 2026 Argus Media Group | 라이선스: 방희빈, 한국서부발전(주)</div>
+  </div>
+
+  <div class="nav-btns">
+    <a class="nav-btn" href="20261019.html">← 이전 (10월 19일)</a>
+    <a class="nav-btn next" href="20261021.html">다음 (10월 21일) →</a>
+  </div>
+</div>
+</body>
+</html>

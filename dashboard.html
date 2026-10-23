@@ -196,6 +196,42 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-10-22', label:'10월 22일', day:'목', hot:true, tags:'중동 $480(+15) · Yara 유럽 27만t 감산 · NWE 생산비 $1,093 · 남해화학 2027 60만t 협상 · Yara GCA 인수',
+    ocrUrl:'https://docs.google.com/document/d/1FX6ffjN0EJgP3ACaWPxWOiM01e2prgOneWjH5sOW1E8/edit?usp=drivesdk',
+    prices:{me:480, ea:535, nwe:700, usg:565, jklab:895.58}, chg:{me:'+15', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'Yara, 4Q 유럽 암모니아 27만t 감산 — 유럽 생산능력 약 28%'},
+      {type:'hot', text:'중동 fob $480·美걸프 fob $530 각 +15 — 인도 입찰 $510-520 cfr'},
+      {type:'', text:'남해화학 11~12월 약 6만t 도입·2027년 연 60만t 장기계약 협상'},
+      {type:'pol', text:'Yara 美 GCA 인수 연내 완료 전망 · 인도 Avaada 그린암모니아 $42억'}
+    ], monitor:'□ 유럽 추가 감산 □ 11월 Tampa 정산 □ 인도 현물 체결 □ 남해화학 장기계약' },
+  { date:'2026-10-21', label:'10월 21일', day:'수', hot:true, tags:'NWE $700(+30) · 정비·가동중단發 수입 증가 · NWE 생산비 2022년來 최고 · 인도 입찰 $500 · Woodside Beaumont 철수',
+    ocrUrl:'https://docs.google.com/document/d/1c1vKg5iMF6nj_zPOS9ItceWKRHQhbbsEjO_TVD41qzU/edit?usp=drivesdk',
+    prices:{me:465, ea:535, nwe:700, usg:565, jklab:895.58}, chg:{me:'nc', ea:'nc', nwe:'+30', usg:'nc'},
+    issues:[
+      {type:'hot', text:'NWE $700 cfr 복귀(+30) — 정비·가동중단으로 수입 증가, 호가 $720-730'},
+      {type:'hot', text:'인도 입찰 $500 cfr까지 상승 — 중동 fob($465) 상방 압력'},
+      {type:'', text:'美걸프 $565 보합 — 11월 Tampa 정산 다음 주 예정'},
+      {type:'pol', text:'Woodside, 美 Beaumont 암모니아 투자 축소 · 오만 해안 유조선 피격'}
+    ], monitor:'□ 유럽 $720선 □ 알제리 $660 □ 중동 fob 인상 □ 11월 Tampa' },
+  { date:'2026-10-20', label:'10월 20일', day:'화', hot:true, tags:'전 지역 보합 · 심리 강세·추가 인상 예상 · 中 호가 $500-520 · 이란산 $300 미만 · EU 수소 23개 프로젝트',
+    ocrUrl:'https://docs.google.com/document/d/1aq5DBMGFBmBRNwPkJOXEMJy7AAhXOqM1bEwcdondP_Y/edit?usp=drivesdk',
+    prices:{me:465, ea:535, nwe:670, usg:565, jklab:895.58}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'가격 보합이나 심리 강세 — 협상 진행 중, 추가 인상 가능성'},
+      {type:'hot', text:'中 현물 고$400대 fob 후 호가 $500-520 상승 — 이란산 $300 미만 제시설'},
+      {type:'pol', text:'EU 혁신기금, 수소 관련 23개 프로젝트 선정 · 호르무즈 인근 유조선 공격 증가'},
+      {type:'', text:'Petrokemija 5개월 만에 재가동 · Belarus 칼리 4년 만에 美 도착'}
+    ], monitor:'□ 유럽 다음 거래 □ 中 $500-520 체결 □ 이란산 저가 □ 美 11월 거래' },
+  { date:'2026-10-19', label:'10월 19일', day:'월', hot:true, tags:'전 지역 보합 · Sorfert $655fob(+30) · 호르무즈 12척 피격 · 러시아 제재 보류 · 中 CCER 11종',
+    ocrUrl:'https://docs.google.com/document/d/1YmrYZFrrLcW6Oc_CgXz5XfHPa-J0oTDNBj5PJ8IcZMU/edit?usp=drivesdk',
+    prices:{me:465, ea:535, nwe:670, usg:565, jklab:889.29}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'Sorfert, 6천톤 $655/t fob 판매 — 직전比 +$30, NWE는 $670 유지'},
+      {type:'hot', text:'호르무즈 최근 1주 최소 12척 공격(UKMTO) — 황 운반선 2척은 통과'},
+      {type:'pol', text:'트럼프 신규 對러 에너지 제재법 보류 · 中 CCER 방법론 11종 추가 제안'},
+      {type:'', text:'우크라이나 OPZ 매각 경매 참가자 없어 무산'}
+    ], monitor:'□ Sorfert 추가 판매 □ 호르무즈 공격 □ 美 11월 협의 □ 러시아 제재' },
   { date:'2026-10-16', label:'10월 16일', day:'금', hot:true, tags:'전 지역 보합 · 11월 협상 견조 · 英 CBAM 예시세율 발표 · ADB·日 AM Green 지원 · 獨 해외수소 €3억',
     ocrUrl:'https://docs.google.com/document/d/178CF8NENWVMBBdMOXqfdilhVz8PpSUYMbUH4olGlZjg/edit?usp=drivesdk',
     prices:{me:465, ea:535, nwe:670, usg:565, jklab:889.29}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
