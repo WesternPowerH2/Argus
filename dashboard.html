@@ -196,6 +196,33 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-10-29', label:'10월 29일', day:'목', hot:true, tags:'전 지역 상승 · 11월 Tampa $640(+95) · 美걸프 +$75 · NWE $715 · 中 현물 매도 복귀 · Sorfert $665',
+    ocrUrl:'https://docs.google.com/document/d/1nsVgCIMCHZreB9YYgwWzsurrnayIwnC9fJG04QYljXg/edit?usp=drivesdk',
+    prices:{me:490, ea:545, nwe:715, usg:640, jklab:877.63}, chg:{me:'+10', ea:'+5', nwe:'+15', usg:'+75'},
+    issues:[
+      {type:'hot', text:'11월 Tampa $640(+$95) — 6월 이후 첫 상승, 美걸프 +$75'},
+      {type:'hot', text:'NWE 주간 $700~725(+25) — 오퍼 $750 근접, 생산비 $1,133'},
+      {type:'', text:'동아시아 $520~560(+10) — 中 현물 매도 복귀, 동남아 매진'},
+      {type:'pol', text:'이란 호르무즈 조건 재확인 · EU CCS 법안 2027 1Q'}
+    ], monitor:'□ GCA 재가동 □ AGF 감산·$750 □ 中 현물·인도 입찰 □ 이란–美' },
+  { date:'2026-10-28', label:'10월 28일', day:'수', hot:false, tags:'동아시아 $540(+5) · 中 오퍼 $500~530 fob · Tampa +$20~100 전망 · Jera–AM Green 7만t · EU RFNBO 개편 요구',
+    ocrUrl:'https://docs.google.com/document/d/1HqfWSqZg5tN5WoDYOvAesk93hiVxEZaybWyvRB7BdUw/edit?usp=drivesdk',
+    prices:{me:480, ea:540, nwe:700, usg:565, jklab:877.63}, chg:{me:'nc', ea:'+5', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'中 오퍼 $500~530 fob 상승 — 동아시아 $540(+5)'},
+      {type:'hot', text:'11월 Tampa 정산 임박 — +$20~100 전망, 현물 매수 증가'},
+      {type:'', text:'Jera–AM Green 재생암모니아 연 7만t 5년 계약'},
+      {type:'pol', text:'英 수소보조 축소·비료관세 폐지 · EU RFNBO 개편 요구'}
+    ], monitor:'□ Tampa 인상폭 □ 中·동남아 fob □ TTF·감산 □ EU RFNBO' },
+  { date:'2026-10-27', label:'10월 27일', day:'화', hot:false, tags:'전 지역 보합 · AGF 감산 검토(유럽 28% 오프라인) · TTF $32 · JKLAB 877.63(-17.95) · 日 암모니아 자동차운반선',
+    ocrUrl:'https://docs.google.com/document/d/1vGI0KxKB2dolCowMQO4o_r3MYn_PT2k5wvmUODki504/edit?usp=drivesdk',
+    prices:{me:480, ea:535, nwe:700, usg:565, jklab:877.63}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'AGF 오퍼 철회·추가 감산 검토 — 유럽 생산 28% 오프라인, TTF $32'},
+      {type:'hot', text:'美걸프 $565 보합 — 11월 Tampa 이번 주 정산 대기'},
+      {type:'', text:'동아시아 $535 보합 — 한국 소량 현물 관심, 中 $500+ fob'},
+      {type:'pol', text:'日 7개사 그린암모니아 연료 자동차운반선 4척·공급망'}
+    ], monitor:'□ 11월 Tampa 정산 □ AGF 감산·TTF □ 中·동남아 fob □ 日 선박연료' },
   { date:'2026-10-26', label:'10월 26일', day:'월', hot:false, tags:'전 지역 보합 · 11월 Tampa 이번 주 정산 · TTF $31.66 · 호르무즈 정상화 2027.2Q · NH3 Clean Energy FID 연기',
     ocrUrl:'https://docs.google.com/document/d/1f0uS1ITmCSceZ-ke9DrU8ecka3FJuUzJpLzqG3cTuxg/edit?usp=drivesdk',
     prices:{me:480, ea:535, nwe:700, usg:565, jklab:895.58}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
