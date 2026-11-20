@@ -196,6 +196,24 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',san
 
 <script>
 const briefs = [
+  { date:'2026-11-19', label:'11월 19일', day:'목', hot:true, tags:'전 지역 상승 · 동아시아 $585(+10) · 중동 주간 +$30 · 韓 재고 낮음 · 12월 현물 매진 · Acme 印 76만t FID',
+    ocrUrl:'https://docs.google.com/document/d/10iow16n54_Uc1cHHTaybOw10siza3yqapjPWulTKFgo/edit?usp=drivesdk',
+    prices:{me:540, ea:585, nwe:765, usg:650, jklab:890.78}, chg:{me:'up', ea:'up', nwe:'up', usg:'up'},
+    issues:[
+      {type:'hot', text:'전 지역 상승 — 동아시아 $585·중동 $540(+10)'},
+      {type:'hot', text:'韓 재고 12월 앞두고 낮음 · 12월 현물 대부분 매진'},
+      {type:'', text:'30~60일 견조 — 유럽 1월 조기 구매·Tampa 정산 주목'},
+      {type:'pol', text:'Acme 印 76만t FID · ReNew 30만t FEED'}
+    ], monitor:'□ 韓 12월 재고 □ Tampa 12월 정산 □ NWE 1월 체결 □ 이집트 가스' },
+  { date:'2026-11-18', label:'11월 18일', day:'수', hot:true, tags:'중동 fob $530(+15) · 美걸프 fob $630(+10) · 동아시아·NWE 보합 · 2027 장기계약 협상기 · EU CBAM 노르웨이·아이슬란드 확대',
+    ocrUrl:'https://docs.google.com/document/d/1D38kVwsGBtTwWyGs2ZjVOebHuBD6W6Jh0CUVo3hoc_Q/edit?usp=drivesdk',
+    prices:{me:530, ea:575, nwe:760, usg:645, jklab:890.78}, chg:{me:'up', ea:'nc', nwe:'nc', usg:'nc'},
+    issues:[
+      {type:'hot', text:'중동 $530(+15)·美걸프 fob $630(+10) — 서쪽 수요 견인'},
+      {type:'hot', text:'동아시아 $575 보합 — 2027 장기계약 협상 중'},
+      {type:'', text:'Forward 1월물 정점 구조 · JKLAB 890.78 유지'},
+      {type:'pol', text:'EU CBAM 2027년 노르웨이·아이슬란드 확대'}
+    ], monitor:'□ 중동 역외 선적 □ 2027 계약 협상 □ 중국 선박 □ EU CBAM' },
   { date:'2026-11-17', label:'11월 17일', day:'화', hot:true, tags:'JKLAB 890.78(+22.64) · 전 지역 보합 · 한국 재고 낮음 · 美걸프 잔여 현물 $640 fob · Gentari 印 그린암모니아 2027 FID',
     ocrUrl:'https://docs.google.com/document/d/1TIXCwas6DoGYgN8IycYzzbzfjTwPy6oz9fdJeqVt0_U/edit?usp=drivesdk',
     prices:{me:515, ea:575, nwe:760, usg:645, jklab:890.78}, chg:{me:'nc', ea:'nc', nwe:'nc', usg:'nc'},
